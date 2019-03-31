@@ -6,6 +6,7 @@ body{
 }
 ul {
 	list-style-type: none;
+	position: relative;
 	margin: 0;
 	padding: 0;
   }
@@ -18,17 +19,17 @@ ul {
   a {
 	display: block;
 	padding: 8px;
-	background-color:black;
+	background-color:#081f2c;
   }
   ul {
-	background-color:black;
+	background-color:#081f2c;
   }
   ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background-color:black;
+	background-color:#081f2c;
   }
   li {
 	float: left;
@@ -41,28 +42,35 @@ ul {
 	text-decoration: none;
   }
   li a:hover {
-	background-color: #111;
+	transition: border-bottom-color .15s ease-in-out;
+	transition-property: border-bottom-color;
   }
   li a:after {
 	content: "";
 	padding-left: inherit;
-	border-right: 1px solid rgb(0, 206, 209);
+	border-right: 1px solid rgb(41, 226, 230); 
+	border-bottom-color:  rgb(41, 226, 230);
 	width: 15px;
   }
   ul li:last-child a:after{
-	  border-right: 0px;
+      border-right: 0px;
   }
   .navbar{
 	position: -webkit-sticky; /* Safari */
 	position: sticky;
 	top: 0;
 	display: flex;
-	align-items: center;
-
+    align-items: center;
   }
   .active {
+	display: block;
+	font-family:  Helvetica;
 	font-size: 20px;
-	align-items: right;
+	position : absolute;
+	right: 0;
+	top: 31px;
+	color: white;
+	margin-right: .9375rem;
   }
   .logo{
 	  width: 100px;
@@ -71,5 +79,6 @@ ul {
   .logo img {
 	  height: 100%;
 	  width: 100%;
-  }
+	}
+	
   
