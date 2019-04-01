@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Admin Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="../public/stylesheet/admindashboard/main.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../public/stylesheet/admindashboard/admindashboard.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../public/stylesheet/lib/fontawesome-free-5.8.1-web/css/all.css"
+    />
+  </head>
+
+  <body>
+    <div id="userInfoBar" class="bg-white">
+      <div class="userInfoBar-item circle">Avatar</div>
+      <div class="userInfoBar-item">Icon thông báo</div>
+      <div class="userInfoBar-item">Icon quản lý liên lạc</div>
+      <div class="userInfoBar-item">x</div>
+    </div>
+    <div id="navbar">
+      <a href="#" class="navbar-item active">Home</a>
+      <a href="#" class="navbar-item">Quản lý bài viết</a>
+      <a href="#" class="navbar-item">Lượt truy cập</a>
+      <a href="#" class="navbar-item">Quảng cáo đang chạy</a>
+      <a href="#" class="navbar-item">Danh sách cộng tác viên</a>
+    </div>
+    <div>
+      <p id="pageName">Home</p>
+    </div>
+    <div id="result-container">
+      <div class="result-item bg-green">
+        <i class="fas fa-user"></i>
+        <h3>Số lượt truy cập</h3>
+        <h1>3000000</h1>
+      </div>
+      <div class="result-item bg-blue">
+        <i class="fas fa-user"></i>
+        <h3>Số bài viết</h3>
+        <h1>3000000</h1>
+      </div>
+      <div class="result-item bg-purple">
+        <i class="fas fa-user"></i>
+        <h3>Số lượt share</h3>
+        <h1>3000000</h1>
+      </div>
+      <div class="result-item bg-red">
+        <i class="fas fa-user"></i>
+        <h3>Tổng doanh thu</h3>
+        <h1>3000000</h1>
+      </div>
+    </div>
+    <div id="social-media-and-website-visit">
+      <div
+        class="flex-container flex-column bg-green"
+        style="grid-column: 1; grid-row: 2;"
+      >
+        <h1>1234+</h1>
+        <h2>Subscribe</h2>
+        <button type="button" class="btn btn-md btn-rounded bg-trans">
+          More Info
+        </button>
+      </div>
+      <div
+        class="flex-container flex-column bg-purple"
+        style="grid-column: 1; grid-row: 3;"
+      >
+        <h1>1234+</h1>
+        <h2>Facebook likes</h2>
+        <button class="btn btn-md btn-rounded bg-trans">More Info</button>
+      </div>
+      <div
+        class="flex-container flex-column bg-blue"
+        style="grid-column: 1; grid-row: 4;"
+      >
+        <h1>1234+</h1>
+        <h2>Twitter followers</h2>
+        <button class="btn btn-md btn-rounded bg-trans">More Info</button>
+      </div>
+    </div>
+  </body>
+</html>

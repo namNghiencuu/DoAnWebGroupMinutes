@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+#pageName {
+  padding-left: 10%;
+  padding-top: 10px;
+  font-size: 24pt;
+  color: rgb(66, 66, 252);
+}
+.bg-green {
+  background-color: #06d79c;
+  color: white;
+}
+.bg-red {
+  background-color: #ee5350;
+  color: white;
+}
+
+.bg-blue {
+  background-color: #398bf7;
+  color: white;
+}
+
+.bg-purple {
+  background-color: #745af1;
+  color: white;
+}
+
+.bg-white {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+.bg-trans {
+  background-color: rgba(255, 255, 255, 0);
+  color: black;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.btn-md {
+  width: 10vw;
+  height: 5vh;
+}
+
+.btn-trans {
+  background-color: rgba(255, 255, 255, 0);
+}
+.btn-rounded {
+  border-radius: 15px;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-container .flex-center-all {
+  justify-content: center;
+  align-content: center;
+}
