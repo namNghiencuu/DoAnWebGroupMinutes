@@ -1,3 +1,12 @@
+#content {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+/* ************************************************** */
+/* ************************************************** */
+/* navbar */
+/* ************************************************** */
+/* ************************************************** */
 #navbar {
   overflow: hidden;
   background-color: black;
@@ -5,26 +14,24 @@
   display: flex;
   flex-flow: row nowrap;
 }
-
 #navbar a {
   padding: 14px 16px;
-  color: white;
+  color: gray;
   text-align: center;
   text-decoration: none;
   font-size: 17px;
 }
 
-.navbar-item:hover {
-  background-color: wheat;
-  color: blue;
+#navbar a:hover {
+  color: white;
 }
 
-#navbar .navbar-item.active {
+#navbar a.active {
+  color: white;
   background-color: #4caf50;
 }
-
-#navbar .navbar-item:hover:not(.active) {
-  background-color: #111;
+#navbar a.active:hover {
+  background-color: #4caf50;
 }
 
 @media screen and (max-width: 600px) {
@@ -37,6 +44,11 @@
   }
 }
 
+/* ************************************************** */
+/* ************************************************** */
+/* UserInfoBar */
+/* ************************************************** */
+/* ************************************************** */
 #userInfoBar {
   height: 10vh;
   overflow: hidden;
@@ -62,8 +74,12 @@
 .circle {
   border-radius: 50%;
 }
-
-#result-container {
+/* ************************************************** */
+/* ************************************************** */
+/* General result */
+/* ************************************************** */
+/* ************************************************** */
+#result {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
@@ -97,11 +113,46 @@
   place-self: center;
   margin-bottom: 0;
 }
-
+/* ************************************************** */
+/* ************************************************** */
+/* social media and website visit section */
+/* ************************************************** */
+/* ************************************************** */
 #social-media-and-website-visit {
   display: grid;
-  grid-template-columns: 20% 80%;
+  grid-template-columns: 20% 4% auto;
   grid-template-rows: 20px auto auto auto 20px;
   grid-row-gap: 20px;
-  height: 90vh;
+  height: 800px;
+}
+/* ************************************************** */
+/* ************************************************** */
+/* activity and to do */
+/* ************************************************** */
+/* ************************************************** */
+#activity-and-todo {
+  display: grid;
+  grid-template-columns: auto 5% auto;
+  grid-template-rows: auto 30px;
+  height: 600px;
+}
+#activity {
+  grid-column: 1;
+  grid-row: 1;
+  display: flex;
+  flex-flow: column;
+  align-content: center;
+  background-color: blue;
+}
+#activity > *,
+#todo > * {
+  margin: 0 10px 0 10px;
+}
+#todo {
+  grid-column: 3;
+  grid-row: 1;
+  display: flex;
+  flex-flow: column;
+  align-content: center;
+  background-color: violet;
 }
