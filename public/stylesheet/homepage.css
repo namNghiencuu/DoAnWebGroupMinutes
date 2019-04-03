@@ -71,35 +71,73 @@ body {
   top:0px;
   left: 0px;
 }
+.abc{
+  font-size: 20px;
+  font-weight: lighter;
+  font-family:  'Lucida Grande';
+}
 #bigfb{
   background-color: #081f2c;
   width: 100%;
   height: 40px;
   text-align: left;
   margin-top: 60px;
-  padding-top: 15px;  
+  padding-top: 20px;
+  padding-bottom: 5px;  
 
 }
 .football{
   color: white;
+  font-weight: bold;
   padding-top: 5px;
+  font-size: 26px;
 }
 #lastAndToday{
   display: flex;
   flex-direction: row;
-
 }
 .box{
-  border: 2px solid black;
-  padding: 0 100px 0 0 ;
-  
+  display: block;
+  border: 1px solid black;
+  padding: 3px 110px 3px 110px ;
+  font-weight: lighter;
 }
 #matches{
   margin-left:auto;
 }
 .resetFormat{
-  text-decoration: none;s
+  text-decoration: none;
 }
 .txt-black{
   color: black;
 }
+.lastnews{
+  font-weight: 600;
+  position:relative;
+  overflow: hidden;
+  clear: both;
+  text-align: center;
+  text-transform: uppercase;
+  color: #081f2c;
+  padding:0;
+  line-height: 1;
+}
+.lastnews::before{
+  content: "";
+  position: absolute;
+  height:3px;
+  top:50%;
+  background-color: #a2aaad;
+  margin-top: -.0625rem;
+  left: 0;
+  right:0;
+}
+.lastnews span{
+  background-color:white;
+  display:inline-block;
+  position: relative;
+  padding:0 1.25rem;
+  max-width: 95%;
+  overflow:hidden;
+}
+
