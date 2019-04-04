@@ -99,11 +99,12 @@ body {
 .box{
   display: block;
   border: 1px solid black;
-  padding: 3px 110px 3px 110px ;
-  font-weight: lighter;
+  flex: 1 1 auto; 
+  text-align: center;
+ font-weight: lighter;
 }
 #matches{
-  margin-left:auto;
+  margin-left:70px;
 }
 .resetFormat{
   text-decoration: none;
@@ -119,7 +120,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #081f2c;
-  padding:0;
+  padding:0 ;
   line-height: 1;
 }
 .lastnews::before{
@@ -134,9 +135,12 @@ body {
 }
 .lastnews span{
   background-color:white;
+  font-family: Helvetica;
+  font-weight: lighter;
+  font-size: 30px;
   display:inline-block;
   position: relative;
-  padding:0 1.25rem;
+  padding:0 10px 0 10px;
   max-width: 95%;
   overflow:hidden;
 }
