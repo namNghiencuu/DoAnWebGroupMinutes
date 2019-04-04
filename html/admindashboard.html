@@ -1,125 +1,167 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Admin Dashboard</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="../public/stylesheet/admindashboard/main.css"
-    />
-    <link
-      rel="stylesheet"
-      href="../public/stylesheet/admindashboard/admindashboard.css"
-    />
-    <link
-      rel="stylesheet"
-      href="../public/stylesheet/lib/fontawesome-free-5.8.1-web/css/all.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"
-    />
-  </head>
 
-  <body>
-    <div id="userInfoBar" class="bg-white">
-      <div class="userInfoBar-item circle">Avatar</div>
-      <div class="userInfoBar-item">Icon thông báo</div>
-      <div class="userInfoBar-item">Icon quản lý liên lạc</div>
-      <div class="userInfoBar-item">x</div>
+<head>
+  <title>Admin Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="../public/stylesheet/admindashboard/main.css" />
+  <link rel="stylesheet" href="../public/stylesheet/admindashboard/admindashboard.css" />
+  <link rel="stylesheet" href="../public/stylesheet/lib/fontawesome-free-5.8.1-web/css/all.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js" />
+</head>
+
+<body style="background-color: rgba(128, 128, 128, 0.459);">
+  <div id="userInfoBar" class="bg-white">
+    <div class="userInfoBar-item circle">Avatar</div>
+    <div class="userInfoBar-item">Icon thông báo</div>
+    <div class="userInfoBar-item">Icon quản lý liên lạc</div>
+    <div class="userInfoBar-item">x</div>
+  </div>
+  <div id="navbar">
+    <a href="#" class="navbar-item active">Home</a>
+    <a href="#" class="navbar-item">Quản lý bài viết</a>
+    <a href="#" class="navbar-item">Bình luận tỉ số trận đấu</a>
+    <a href="#" class="navbar-item">Lượt truy cập</a>
+    <a href="#" class="navbar-item">Quảng cáo đang chạy</a>
+    <a href="#" class="navbar-item">Danh sách cộng tác viên</a>
+  </div>
+  <div id="content">
+    <div>
+      <p id="pageName">Home</p>
     </div>
-    <div id="navbar">
-      <a href="#" class="navbar-item active">Home</a>
-      <a href="#" class="navbar-item">Quản lý bài viết</a>
-      <a href="#" class="navbar-item">Lượt truy cập</a>
-      <a href="#" class="navbar-item">Quảng cáo đang chạy</a>
-      <a href="#" class="navbar-item">Danh sách cộng tác viên</a>
-    </div>
-    <div id="content">
-      <div>
-        <p id="pageName">Home</p>
-      </div>
-      <!-- **************************************** -->
-      <!-- Section 1 -->
-      <!-- **************************************** -->
+    <!-- **************************************** -->
+    <!-- Section 1 -->
+    <!-- **************************************** -->
 
-      <div id="result">
-        <div class="result-item bg-green">
-          <i class="fas fa-user"></i>
-          <h3>Số lượt truy cập</h3>
-          <h1>3000000</h1>
-        </div>
-        <div class="result-item bg-blue">
-          <i class="fas fa-user"></i>
-          <h3>Số bài viết</h3>
-          <h1>3000000</h1>
-        </div>
-        <div class="result-item bg-purple">
-          <i class="fas fa-user"></i>
-          <h3>Số lượt share</h3>
-          <h1>3000000</h1>
-        </div>
-        <div class="result-item bg-red">
-          <i class="fas fa-user"></i>
-          <h3>Tổng doanh thu</h3>
-          <h1>3000000</h1>
-        </div>
+    <div id="result">
+      <div class="result-item bg-green">
+        <i class="fas fa-user"></i>
+        <h3>Số lượt truy cập</h3>
+        <h1>3000000</h1>
       </div>
-      <!-- **************************************** -->
-      <!-- Section 2 -->
-      <!-- **************************************** -->
-      <div id="social-media-and-website-visit">
-        <div
-          class="flex-container flex-column bg-green"
-          style="grid-column: 1; grid-row: 2;"
-        >
-          <h1>1234+</h1>
-          <h2>Subscribe</h2>
-          <button
-            type="button"
-            class="btn btn-md btn-rounded bg-trans bg-hover-gray"
-          >
-            More Info
-          </button>
-        </div>
-        <div
-          class="flex-container flex-column bg-purple"
-          style="grid-column: 1; grid-row: 3;"
-        >
-          <h1>1234+</h1>
-          <h2>Facebook likes</h2>
-          <button class="btn btn-md btn-rounded bg-trans bg-hover-gray">
-            More Info
-          </button>
-        </div>
-        <div
-          class="flex-container flex-column bg-blue"
-          style="grid-column: 1; grid-row: 4;"
-        >
-          <h1>1234+</h1>
-          <h2>Twitter followers</h2>
-          <button class="btn btn-md btn-rounded bg-trans bg-hover-gray">
-            More Info
-          </button>
-        </div>
-        <div
-          style="background-color: aliceblue; grid-column: 3; grid-row: 2 /span 3;"
-        >
-          chart will be here
-        </div>
+      <div class="result-item bg-blue">
+        <i class="fas fa-file-archive"></i>
+        <h3>Số bài viết</h3>
+        <h1>3000000</h1>
       </div>
-      <!-- **************************************** -->
-      <!-- Section 3 -->
-      <!-- **************************************** -->
-
-      <div id="activity-and-todo">
-        <div id="activity">
-          <div><h1>Recent activiy</h1></div>
-        </div>
-        <div id="todo">
-          <div><h1>To do list</h1></div>
-        </div>
+      <div class="result-item bg-purple">
+        <i class="fas fa-share"></i>
+        <h3>Số lượt share</h3>
+        <h1>3000000</h1>
+      </div>
+      <div class="result-item bg-red">
+        <i class="fas fa-buffer"></i>
+        <h3>Tổng doanh thu</h3>
+        <h1>3000000</h1>
       </div>
     </div>
-  </body>
+    <!-- **************************************** -->
+    <!-- Section 2 -->
+    <!-- **************************************** -->
+    <div id="social-media-and-website-visit">
+      <div class="flex-container flex-column bg-green" style="grid-column: 1; grid-row: 2;">
+        <h1>1234+</h1>
+        <h2>Subscribe</h2>
+        <button type="button" class="btn btn-md btn-rounded bg-trans bg-hover-gray">
+          More Info
+        </button>
+      </div>
+      <div class="flex-container flex-column bg-purple" style="grid-column: 1; grid-row: 3;">
+        <h1>1234+</h1>
+        <h2>Facebook likes</h2>
+        <button class="btn btn-md btn-rounded bg-trans bg-hover-gray">
+          More Info
+        </button>
+      </div>
+      <div class="flex-container flex-column bg-blue" style="grid-column: 1; grid-row: 4;">
+        <h1>1234+</h1>
+        <h2>Twitter followers</h2>
+        <button class="btn btn-md btn-rounded bg-trans bg-hover-gray">
+          More Info
+        </button>
+      </div>
+      <div style="background-color: aliceblue; grid-column: 3; grid-row: 2 /span 3;">
+        chart will be here
+      </div>
+    </div>
+    <!-- **************************************** -->
+    <!-- Section 3 -->
+    <!-- **************************************** -->
+
+    <div id="activity-and-todo">
+      <div id="activity">
+        <div class="flex-container flex-align-items-center" style="margin-bottom: 20px;">
+          <h1>Recent activiy</h1>
+          <button class="btn circle circle-s bg-blue flex-item-left shape-center">
+            &plus;
+          </button>
+        </div>
+        <div class="assignTask">
+          <div class="circle circle-s avatar"><img src="../public/images/avatar.jpg" alt="user"></div>
+          <div class="name">Phan Hoang Nam <span style="color: gray;"> | 6h30</span></div>
+          <div class="dosomething">Joined task abc with abc, xyz, lmc</div>
+          <div class="detail">Joined task abc with abc, xyz, lmc</div>
+        </div>
+        <div class="assignTask">
+          <div class="circle circle-s avatar"><img src="../public/images/avatar.jpg" alt="user"></div>
+          <div class="name">Phan Hoang Nam <span style="color: gray;"> | 6h30</span> </div>
+          <div class="dosomething">Write an article name abcxyz</div>
+          <div class="detail">Link to the article <span><a href="#">abcxyz</a></span></div>
+        </div>
+        <div class="assignTask">
+          <div class="circle circle-s avatar"><img src="../public/images/avatar.jpg" alt="user"></div>
+          <div class="name">Phan Hoang Nam <span style="color: gray;"> | 6h30</span></div>
+          <div class="dosomething">Joined task abc with abc, xyz, lmc</div>
+          <div class="detail">Joined task abc with abc, xyz, lmc</div>
+        </div>
+        <div class="assignTask">
+          <div class="circle circle-s avatar"><img src="../public/images/avatar.jpg" alt="user"></div>
+          <div class="name">Phan Hoang Nam <span style="color: gray;"> | 6h30</span></div>
+          <div class="dosomething">Joined task abc with abc, xyz, lmc</div>
+          <div class="detail">Joined task abc with abc, xyz, lmc</div>
+        </div>
+        <div class="doneTask"></div>
+      </div>
+      <div id="todo">
+        <div class="flex-container flex-align-items-center" style="margin-bottom: 20px;">
+          <h1>To do list</h1>
+          <button class="btn circle circle-s bg-blue flex-item-left shape-center">
+            &plus;
+          </button>
+        </div>
+        <div class="todo-item">
+          <input type="checkbox" class="checkbox" name="a" value="false">
+          <label class="detail">Stuff to do</label>
+          <div class="responsiblePeople">
+            <div class="circle circle-s avatar"><img src="../public/images/avatar.jpg" alt="user"></div>
+            <div class="circle circle-s avatar"><img src="../public/images/avatar.jpg" alt="user"></div>
+            <div class="circle circle-s avatar"><img src="../public/images/avatar.jpg" alt="user"></div>
+          </div>
+          <div class="time">time do it</div>
+        </div>
+        <div class="todo-item">
+          <input type="checkbox" class="checkbox" name="a" value="false">
+          <label class="detail">Stuff to do</label>
+          <div class="responsiblePeople">
+            <div class="circle circle-s avatar"><img src="../public/images/avatar.jpg" alt="user"></div>
+            <div class="circle circle-s avatar"><img src="../public/images/avatar.jpg" alt="user"></div>
+            <div class="circle circle-s avatar"><img src="../public/images/avatar.jpg" alt="user"></div>
+          </div>
+          <div class="time">time do it</div>
+        </div>
+        <div class="todo-item">
+          <input type="checkbox" class="checkbox" name="a" value="false">
+          <label class="detail">Stuff to do</label>
+          <div class="responsiblePeople">
+            <div class="circle circle-s avatar"><img src="../public/images/avatar.jpg" alt="user"></div>
+            <div class="circle circle-s avatar"><img src="../public/images/avatar.jpg" alt="user"></div>
+            <div class="circle circle-s avatar"><img src="../public/images/avatar.jpg" alt="user"></div>
+          </div>
+          <div class="time">time do it</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>
