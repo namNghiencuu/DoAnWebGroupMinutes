@@ -44,7 +44,7 @@ body {
   text-decoration: none;
 }
 #navbar div:hover {
-  border-bottom: 7px solid#00BFFF;
+  border-bottom: 7px solid#00a9ce;
 }
 #navbar div:hover a {
   color:#DCDCDC;
@@ -161,7 +161,7 @@ body {
 }
 .mores{
   font-family:  "Titillium Web", sans-serif;
-  color: white;
+  color:white;
   font-size: 23px;
   font-weight: lighter;
   text-decoration: none;
@@ -237,6 +237,7 @@ h2{
   margin-bottom: 40px;
   line-height: 40px;
   text-decoration: none;
+  padding:0 10px 0 10px;
   cursor: pointer;
   width: fit-content;
 } 
@@ -246,24 +247,24 @@ bottom: 35px;
 left: 44%;
 }
 .footers{
-  background-color: #e10a0a;
-  margin-top: 0; 
+  background-color: #ff0000;
+  margin-top: 2px; 
   color:#fff;
   display: block;
-  border-top:8px solid #b01f24;
-  padding: 2px 0 ;
+  border-top:2px solid #ff0000;
+  padding:  0 ;
 }
-#navbar:before,#footter:before{
+#navbar:before,#footer:before{
   content:"";
   display: table;
 }
-#navbar:after,#footter:after{
+#navbar:after,#footer:after{
   content:"";
   display: table;
   clear:both;
   box-sizing: border-box;
 }
-.footters>.inner{
+.footers>.inner{
   margin-left: auto;
   margin-right: auto;
   max-width:1258px;
@@ -283,10 +284,15 @@ left: 44%;
 div{
   display: block;
 }
-.footers.logo{
+.footers.footerlogo{
   margin-bottom: 20px;
-  margin-top:-10px;
+  margin-left:-10px;
+  margin-top: 0px;
   box-sizing: border-box;
+}
+.footerimage{
+  width:150px;
+  height: 150px;
 }
 a.link,a:visited{
   color: #e10a0a;
@@ -295,17 +301,12 @@ a.link,a:visited{
 .footers a {
   transition: all 0.3s ease-out;
 }
-.footers.footerimage{
-  width:70px;
-  height: 60px;
-  top: 0;
-}
 .footers.footermenu{
   width:30%;
   float: left;
   clear:none;
-  margin-bottom: 0;
-  margin-top: 0;
+  margin-bottom: 30px;
+  margin-top: 50px;
 }
 .footermenu{
   margin-bottom: 1.625rem;
@@ -316,7 +317,6 @@ a.link,a:visited{
   height: 1px;
   width: 1px;
   overflow: hidden;
-  clip: rect(1px 1px 1px 1px );
 }
 h2{
   display: block;
@@ -345,6 +345,8 @@ ul{
    border: 0;
    margin-bottom: 10px;
    padding-bottom: 0;
+   list-style: none;
+   list-style-image: none;
  }
  #footermenu a {
    font-family: "Montserrat",sans-serif;
@@ -353,4 +355,56 @@ ul{
    text-decoration: none;
    padding: 10px 0 ;
    color:#fff;
+ }
+ ul li {
+   font-size: 23px;
+   line-height: 20px;
+ }
+ li{
+   display: list-item;
+ }
+ .menu{
+   margin-top: 30px;
+ }
+ .footersocial a{
+   font-size: 22.5px;
+   color: #fff;
+ }
+ a:link, a:visited{
+   color: #ff0000;
+ }
+ a:link{
+   text-decoration: none;
+ }
+ [class*="icon-"]{
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+ }
+ .icon-fb:before{
+   content:"<i class="fab fa-facebook-f"></i> "
+ }
+ [data-social]:before{
+  font-family: "social-icons" !important;
+  font-weight: normal !important;
+  font-style: normal !important;
+  content: attr(data-icon);
+  speak: none;
+  line-height: 1;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+ }
+ .fb{
+   position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
  }
