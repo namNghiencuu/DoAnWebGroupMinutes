@@ -294,10 +294,10 @@ div{
   width:150px;
   height: 150px;
 }
-a.link,a:visited{
+/**a.link,a:visited{
   color: #e10a0a;
   text-decoration: none;
-}
+}**/
 .footers a {
   transition: all 0.3s ease-out;
 }
@@ -343,10 +343,9 @@ ul{
  }
  #footermenu ul li{
    border: 0;
-   margin-bottom: 10px;
+   margin-bottom: 25px;
    padding-bottom: 0;
    list-style: none;
-   list-style-image: none;
  }
  #footermenu a {
    font-family: "Montserrat",sans-serif;
@@ -370,13 +369,27 @@ ul{
    font-size: 22.5px;
    color: #fff;
  }
- a:link, a:visited{
+ ul li a.fab{
+   position: relative;
+   color: #262626;
+   transition: .5s;
+   border-radius: 50%;
+   overflow: hidden;
+   border: 3px solid #fff;
+   width: 50px;
+   height: 50px;
+   text-align: center;
+   margin: 0 10px;
+   display: block;
+   list-style-type: none;
+ }
+ /*a:link, a:visited{
    color: #ff0000;
  }
  a:link{
    text-decoration: none;
  }
- [class*="icon-"]{
+  [class*="icon-"]{
   font-family: 'icomoon';
   speak: none;
   font-style: normal;
@@ -387,7 +400,8 @@ ul{
   -webkit-font-smoothing: antialiased;
  }
  .icon-fb:before{
-   content:"<i class="fab fa-facebook-f"></i> "
+   content:"\e00d";
+   box-sizing: border-box;
  }
  [data-social]:before{
   font-family: "social-icons" !important;
@@ -402,7 +416,7 @@ ul{
   box-sizing: border-box;
  }
  .fb{
-   position: absolute;
+   position: relative;
   height: 1px;
   width: 1px;
   overflow: hidden;
