@@ -278,9 +278,6 @@ left: 44%;
   position: relative;
   padding:0;
 }
-.inner{
-  position: relative;
-}
 div{
   display: block;
 }
@@ -342,8 +339,7 @@ ul{
   margin:1.625em 0;
  }
  #footermenu ul li{
-   border: 0;
-   margin-bottom: 25px;
+   margin-bottom: 30px;
    padding-bottom: 0;
    list-style: none;
  }
@@ -365,23 +361,38 @@ ul{
  .menu{
    margin-top: 30px;
  }
- .footersocial a{
-   font-size: 22.5px;
-   color: #fff;
+ .socialmedia{
+   position: relative;
+   top:40%;
+   left: 50%;
+   transform: translate(-53%,-50%)
  }
- ul li a.fab{
+ .socialmedia ul li{
+   list-style: none;
+   display: inline-block;
+   margin:20px 50px;
+   font-size: 30px;
+   padding: 20px 30px;
+   color: black;
+   border:1px solid white;
+   border-radius: 50%;
+   transition: .5s;
+ }
+ /*.socialmedia ul li a.fab{
    position: relative;
    color: #262626;
    transition: .5s;
    border-radius: 50%;
    overflow: hidden;
+   line-height: 50px;
+   font-size: 25px;
    border: 3px solid #fff;
    width: 50px;
    height: 50px;
    text-align: center;
-   margin: 0 10px;
+   margin: 5px 10px;
    display: block;
-   list-style-type: none;
+   list-style: none;
  }
  /*a:link, a:visited{
    color: #ff0000;
