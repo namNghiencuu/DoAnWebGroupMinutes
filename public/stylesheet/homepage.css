@@ -251,7 +251,7 @@ left: 44%;
   margin-top: 2px; 
   color:#fff;
   display: block;
-  border-top:2px solid #ff0000;
+  border-top:1px solid #ff0000;
   padding:  0 ;
 }
 #navbar:before,#footer:before{
@@ -302,8 +302,8 @@ div{
   width:30%;
   float: left;
   clear:none;
-  margin-bottom: 30px;
-  margin-top: 50px;
+  margin-bottom: 25px;
+  margin-top: 40px;
 }
 .footermenu{
   margin-bottom: 1.625rem;
@@ -320,10 +320,7 @@ h2{
   font-family: "Josefin Sans",sans-serif;
   font-size: 20px;
   font-weight: normal;
-  margin-block-start: 0.83em;
-  margin-block-end: 0.83em;
-  margin-inline-start: 0;
-  margin-inline-end: 0; 
+  
 }
 #footermenu ul{
   padding:0;
@@ -352,31 +349,41 @@ ul{
    color:#fff;
  }
  ul li {
-   font-size: 23px;
-   line-height: 20px;
+   font-size: 20px;
+   line-height: 5px;
  }
- li{
+/** li{
    display: list-item;
- }
+ }**/
  .menu{
-   margin-top: 30px;
+   margin-top: 20px;
  }
  .socialmedia{
    position: relative;
-   top:40%;
-   left: 50%;
+   top:2px;
+   left:100%;
    transform: translate(-53%,-50%)
  }
- .socialmedia ul li{
+ .socialmedia li{
    list-style: none;
    display: inline-block;
-   margin:20px 50px;
-   font-size: 30px;
-   padding: 20px 30px;
-   color: black;
-   border:1px solid white;
-   border-radius: 50%;
+   margin:20px 10px;
+   font-size: 25px;
+   padding: 0px;
+   color: white;
    transition: .5s;
+ }
+ .fab{
+   margin-top: 10px;
+ }
+ .socialmedia a{
+   color:white;
+ }
+ li:hover{
+   transition: .3s;
+ }
+ #social div:hover a{
+   color:#d1d1d1;
  }
  /*.socialmedia ul li a.fab{
    position: relative;
