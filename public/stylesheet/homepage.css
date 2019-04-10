@@ -1,5 +1,5 @@
 body {
-  font-family: "Titillium Web", sans-serif;
+  font-family: "Open Sans",sans-serif;
   font-size: 23px;
   width: 1000px;
   margin: 0px auto;
@@ -139,7 +139,7 @@ body {
 }
 .lastnews span{
   background-color:white;
-  font-family: "Titillium Web", sans-serif;
+  font-family: "Open Sans",sans-serif;
   font-weight: lighter;
   font-size: 30px;
   display:inline-block;
@@ -150,18 +150,21 @@ body {
 }
 #more{
   background-color: #00a9ce;
-  width: 33%;
+  width: 200px;
   height: 40px;
   text-align: center;
   align-items: center;
-  margin-top: 50px;
-  padding-top: 8px;
+  margin-top: 5px;
+  padding-top: 10px;
   padding-bottom: 1px;
-  margin: 0 320px 0 320px;  
+  margin: 0 400px 0 390px; 
+}
+#more div:hover a{
+  color:gray;
 }
 .mores{
-  font-family:  "Titillium Web", sans-serif;
-  color:white;
+  font-family:  "Open Sans",sans-serif;
+  color:#fff;
   font-size: 23px;
   font-weight: lighter;
   text-decoration: none;
@@ -234,25 +237,29 @@ h2{
   color:#fff;
   font-weight: 400;
   height: 40px;
-  margin-bottom: 40px;
+  margin-top: 90px;
+  margin-bottom: 0;
   line-height: 40px;
   text-decoration: none;
-  padding:0 10px 0 10px;
+  padding:0 10px 0   10px;
   cursor: pointer;
   width: fit-content;
 } 
-.bottom{
+.media-group div:hover a{
+  color:gray;
+}
+/*.bottom{
 position: absolute;
 bottom: 35px;
 left: 44%;
-}
+}*/
 .footers{
   background-color: #ff0000;
-  margin-top: 2px; 
+  margin-top: 0px; 
   color:#fff;
   display: block;
   border-top:1px solid #ff0000;
-  padding:  0 ;
+  padding:0 ;
 }
 #navbar:before,#footer:before{
   content:"";
@@ -265,9 +272,10 @@ left: 44%;
   box-sizing: border-box;
 }
 .footers>.inner{
-  margin-left: auto;
-  margin-right: auto;
   max-width:1258px;
+  grid-column: 1;
+  grid-row: 1;
+  margin-left: 30px;
 }
 #footer.inner{
   padding-left: 10px;
@@ -317,10 +325,9 @@ div{
 }
 h2{
   display: block;
-  font-family: "Josefin Sans",sans-serif;
+  font-family: "Open Sans",sans-serif;
   font-size: 20px;
   font-weight: normal;
-  
 }
 #footermenu ul{
   padding:0;
@@ -341,12 +348,15 @@ ul{
    list-style: none;
  }
  #footermenu a {
-   font-family: "Montserrat",sans-serif;
-   font-size: 20px;
+   font-family: "Open Sans",sans-serif;
+   font-size: 18px;
    line-height: 5px;
    text-decoration: none;
-   padding: 10px 0 ;
+   margin: 10px 0 ;
    color:#fff;
+ }
+ .footermenu li:hover a{
+   border-bottom: 0.5px solid white;
  }
  ul li {
    font-size: 20px;
@@ -358,32 +368,38 @@ ul{
  .menu{
    margin-top: 20px;
  }
+ .footers{
+   display: grid ;
+   grid-template-columns: 600px 600px ;
+   grid-template-rows: 200px;
+ }
  .socialmedia{
    position: relative;
-   top:2px;
-   left:100%;
-   transform: translate(-53%,-50%)
+   top:1px;
+   left:70%;
+   transform: translate(-53%,-50%);
+   grid-column: 2;
  }
- .socialmedia li{
+ .socialmedia ul div{
    list-style: none;
    display: inline-block;
    margin:20px 10px;
    font-size: 25px;
-   padding: 0px;
-   color: white;
+   padding: 1px;
+   color: white;  
    transition: .5s;
  }
- .fab{
+ /**.fab{
    margin-top: 10px;
- }
+ }*/
  .socialmedia a{
    color:white;
  }
- li:hover{
+ div:hover{
    transition: .3s;
  }
  #social div:hover a{
-   color:#d1d1d1;
+   color:gray;
  }
  /*.socialmedia ul li a.fab{
    position: relative;
