@@ -9,6 +9,18 @@ body {
   align-items: center;
   justify-content: center;
 }
+#main{
+  max-width: 100%;
+  min-width: 50%;
+  clear: both;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+a{
+  text-decoration: none;
+}
 /* ************************************************************* */
 /* ************************************************************* */
 /* Navbar */
@@ -148,6 +160,9 @@ body {
   max-width: 95%;
   overflow:hidden;
 }
+section{
+  display: block;
+}
 #more{
   background-color: #00a9ce;
   width: 200px;
@@ -180,6 +195,44 @@ body {
 section{
   display: block;
   height:200px;
+  background-color: #fff;
+}
+.allofstory1{
+  display: grid ;
+  grid-template-columns: 500px 350px ;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.innerstoryofmessi{
+  grid-column: 1;
+}
+.innerstoryofmessi:before{
+  box-sizing: inherit;
+  position: absolute;
+  content: " ";
+  width: 0;
+  height: 0;
+  border-color: white;
+  z-index:1;
+  top:50%;
+  border-top: 10px solid rgba(0,0,0,0);
+  right: 0;
+  margin-right: 5px;
+  border-bottom: 10px solid rgba(0,0,0,0);
+  border-left: 0;
+  border-right: 10px solid white;
+}
+.messi_picture{
+  width: 438px;
+  height: 235px;
+}
+.title{
+  grid-column: 2;
+}
+.title_wrapper1{
+  position: relative;
+  text-align: right;
+  text-decoration: none;
 }
 .clearfix:before{
   clear:both;
@@ -389,9 +442,6 @@ ul{
    color: white;  
    transition: .5s;
  }
- /**.fab{
-   margin-top: 10px;
- }*/
  .socialmedia a{
    color:white;
  }
@@ -401,58 +451,4 @@ ul{
  #social div:hover a{
    color:gray;
  }
- /*.socialmedia ul li a.fab{
-   position: relative;
-   color: #262626;
-   transition: .5s;
-   border-radius: 50%;
-   overflow: hidden;
-   line-height: 50px;
-   font-size: 25px;
-   border: 3px solid #fff;
-   width: 50px;
-   height: 50px;
-   text-align: center;
-   margin: 5px 10px;
-   display: block;
-   list-style: none;
- }
- /*a:link, a:visited{
-   color: #ff0000;
- }
- a:link{
-   text-decoration: none;
- }
-  [class*="icon-"]{
-  font-family: 'icomoon';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
- }
- .icon-fb:before{
-   content:"\e00d";
-   box-sizing: border-box;
- }
- [data-social]:before{
-  font-family: "social-icons" !important;
-  font-weight: normal !important;
-  font-style: normal !important;
-  content: attr(data-icon);
-  speak: none;
-  line-height: 1;
-  vertical-align: middle;
-  text-align: center;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
- }
- .fb{
-   position: relative;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  clip: rect(1px 1px 1px 1px);
- }
+ 
