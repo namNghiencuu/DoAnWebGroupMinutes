@@ -2,7 +2,6 @@
 body {
   font-family: "Open Sans",sans-serif;
   font-size: 30px;
-  width: 1000px;
   margin: 0px auto;
 }
 .center{
@@ -52,6 +51,7 @@ a{
   width: 100%;
   height: 100px;
   margin-bottom:30px;
+  font-size: 20px;
 }
 #navbar div {
   display: flex;
@@ -110,12 +110,14 @@ a{
 #bigfb{
   background-color: #081f2c;
   width: 100%;
-  height: 50px;
+  height: 60px;
   text-align: left;
   margin-top: 60px;
-  padding-top: 2px;
+  padding-top: 10px;
   padding-bottom: 10px;  
-
+}
+#bigfb:hover{
+  color: white;
 }
 .football{
   color: white;
@@ -127,12 +129,19 @@ a{
   display: flex;
   flex-direction: row;
 }
+
 .box{
   display: block;
   border: 1px solid black;
   flex: 2 2 auto; 
   text-align: center;
  font-weight: lighter;
+ font-size: 25px;
+}
+.box:hover{
+  border-color: #008B8B;
+  color: #008B8B;
+  cursor: pointer;
 }
 #matches{
   margin-left:70px;
@@ -188,7 +197,7 @@ section{
   margin-top: 5px;
   padding-top: 5px;
   padding-bottom: 1px;
-  margin: 0 400px 0 390px; 
+  margin: 0 200px 0 580px; 
 }
 #more div:hover a{
   color:gray;
@@ -221,7 +230,7 @@ section{
 }
 .twostory{
   display:grid;
-  grid-template-columns: 1px 1px;
+  grid-template-columns: -1px -1px;
   grid-column-start: 3;
   grid-column-end: 4;
 }
@@ -311,6 +320,59 @@ section{
   content: "";
   display: table;
 }
+.clearfix::after{
+  clear:both;
+  content: "";
+  display: table;
+}
+.tags-list_scroller{
+  margin-right: 20px;
+  margin-left: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.tags-list_list{
+  list-style: none;
+  display: block;
+  padding: 0;
+  margin: 0 50px 0 300px;
+  font-size: 30px;
+  -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    will-change: transform;
+    box-sizing: inherit;
+}
+.tags-list_link{
+  display: block;
+    background-color:gray;
+    text-transform: uppercase;
+    color:white;
+    text-decoration: none;
+    height: 1.625rem;
+    line-height: 1.625rem;
+    padding: 0 .625rem;
+    font-size: .875rem;
+    white-space: nowrap;
+    text-decoration: none;
+}
+ul{
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+.tags-list_tag{
+  display: inline-block;
+  margin-right: 3px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 .tags-list{
   position: relative;
   padding: 0 5px 0 5px;
@@ -326,23 +388,31 @@ section{
 div{
   display: block;
 }
+element.style{
+  touch-action: pan-y;
+  user-select: none;
+  -webkit-user-drag: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.lastnews.tags-list{
+  margin-top: 20px;
+}
+.tags-list{
+  padding-bottom: 30px;
+  position: relative;
+}
 .tags-list_previous.aim{
-  color: #d8d8d8;
+  color: gray;
   cursor: default;
 }
 .tags-list_previous{
-  display: block; 
-  top: 5px;
+  display: block;
+  top:20px;
   left: 0;
-  font-size: 10px;
-  position: absolute;
-  width: 5px;
-  height: 5px;
-  line-height: 5px;
-  text-align: center;
-  transform: translateY(-.8125rem);
+  right: 250px;
 }
 .tags-list_previous::before{
+   font-family: arrow-left;
     speak: none;
     font-style: normal;
     font-weight: 400;
@@ -350,7 +420,8 @@ div{
     text-transform: none;
     direction: ltr;
     unicode-bidi: embed;
-    content: "<";
+    content: "\E62E";
+  font-family: goal-icons;
 }
 .lastnews.tags-list{
   margin-top:20px;
