@@ -2,6 +2,10 @@ body {
   margin: 0;
   padding: 0;
 }
+#content {
+  margin-left: 15px;
+  margin-right: 15px;
+}
 #pageName {
   padding-left: 10%;
   padding-top: 10px;
