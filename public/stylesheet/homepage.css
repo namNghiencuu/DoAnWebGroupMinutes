@@ -162,7 +162,7 @@ a{
   color: #081f2c;
   padding:0 ;
   line-height: 1;
-  margin-top:280px;
+  margin-top:-50px;
 }
 .lastnews::before{
   content: "";
@@ -219,7 +219,6 @@ section{
 }
 section{
   display: block;
-  height:200px;
 }
 .allofstory1{
   display: grid ;
@@ -382,8 +381,8 @@ ul{
   --webkit-top-highlight-color:rgba(0,0,0,0);
   padding-bottom: 5px;
   padding-top: 5px;
-  margin-top: 40px;
-  margin-bottom: 60px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 div{
   display: block;
@@ -422,6 +421,24 @@ element.style{
     unicode-bidi: embed;
     content: "\E62E";
   font-family: goal-icons;
+}
+.video{
+  display: grid;
+  grid-template-columns: 360px 360px 360px 360px;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+.videoucl{
+  grid-column: 1;
+}
+.videoeuropa{
+  grid-column: 2;
+}
+.videopremeir{
+  grid-column: 3;
+}
+.videolaliga{
+  grid-column: 4;
 }
 .lastnews.tags-list{
   margin-top:20px;
@@ -477,8 +494,8 @@ h2{
   color:#fff;
   font-weight: 400;
   height: 40px;
-  margin-top: 70px;
-  margin-bottom: 0;
+  margin-top: 15px;
+  margin-bottom: 5px;
   line-height: 40px;
   text-decoration: none;
   padding:0 10px 0   10px;
@@ -488,6 +505,7 @@ h2{
 .media-group div:hover a{
   color:gray;
 }
+
 /*.bottom{
 position: absolute;
 bottom: 35px;
