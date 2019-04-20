@@ -11,7 +11,7 @@ body {
 }
 /*Slider*/
 #slider{
-  width:100%px;
+  width:100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -21,9 +21,13 @@ body {
   transform: translateY(-50%);
   bottom: initial!important;
 }
+.a12:hover{
+  text-decoration: none;
+}
 .carousel-caption h5{
   color: #fff;
   font-size: 42px;
+  text-decoration: none;
 }
 #main{
   max-width: 100%;
@@ -66,14 +70,16 @@ a{
 #navbar div:first-child {
   margin-right: 10px;
 }
-#navbar div:first-child:after {
+#navbar div:first-child:after,
+#navbar div:nth-last-child(2):after {
   content: "";
 }
 #navbar div a {
   color: white;
   text-decoration: none;
 }
-#navbar div:hover {
+#navbar div:first-child::before:hover,
+#navbar div:nth-last-child(2) {
   border-bottom: 7px solid#00a9ce;
 }
 #navbar div:hover a {
@@ -88,6 +94,43 @@ a{
   margin-left: 5px;
   margin-right: 5px;
   color: #00BFFF;
+}
+.search-box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 30px;
+  border-radius: 40px;
+  padding: 10px;
+  margin-left: 600px !important;
+}
+.search-btn{
+  color: #e84118;
+  float: right;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-txt{
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: white;
+  border-color: white;
+  font-size: 16px;
+   transition: 0.4s;
+   line-height: 20px;
+   width: 0;
+}
+.search-box:hover>.search-txt{
+  width: 200px;
+  padding: 0 6px;
+  text-decoration: none;
 }
 .header-social{
   display:flex;
@@ -221,6 +264,8 @@ section{
   color:#fff;
   font-size: 23px;
   font-weight: lighter;
+  text-decoration: none;
+}.mores:hover{
   text-decoration: none;
 }
 .media-group:not(.hidden){
@@ -651,7 +696,7 @@ ul{
  }
  #footermenu a {
    font-family: "Open Sans",sans-serif;
-   font-size: 18px;
+   font-size: 20px;
    line-height: 5px;
    text-decoration: none;
    margin: 10px 0 ;
@@ -686,7 +731,7 @@ ul{
    list-style: none;
    display: inline-block;
    margin:20px 10px 80px;
-   font-size: 25px;
+   font-size: 30px;
    padding: 1px;
    color: white;  
    transition: .5s;
