@@ -11,7 +11,10 @@ body {
 }
 /*Slider*/
 #slider{
-  width: 100%;
+  width:100%px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .carousel-caption{
   top: 50%;
@@ -208,7 +211,7 @@ section{
   margin-top: 5px;
   padding-top: 5px;
   padding-bottom: 1px;
-  margin: 0 200px 0 580px; 
+  margin: 0 500px 0 750px; 
 }
 #more div:hover a{
   color:gray;
@@ -330,7 +333,7 @@ section{
 }
 .ole{
   display: grid;
-  grid-template-columns: 500px 350p;
+  grid-template-columns: 500px 350px;
   grid-column-start: 1;
   grid-column-end: 2;
 }
@@ -370,7 +373,7 @@ section{
   list-style: none;
   display: block;
   padding: 0;
-  margin: 0 50px 0 300px;
+  margin: 0 100px 0 500px;
   font-size: 30px;
   -webkit-transform: translateZ(0);
     transform: translateZ(0);
@@ -464,7 +467,7 @@ element.style{
 }
 .video{
   display: grid;
-  grid-template-columns: 360px 360px 360px 360px;
+  grid-template-columns: 475px 475px 475px 475px;
   grid-column-start: 1;
   grid-column-end: 4;
 }
@@ -532,13 +535,14 @@ h2{
   background-color: #00a9ce;
   text-align: center;
   color:#fff;
+  font-size: 20px;
   font-weight: 400;
-  height: 40px;
+  height: 50px;
   margin-top: 25px;
   margin-bottom: 5px;
   line-height: 40px;
   text-decoration: none;
-  padding:0 10px 0 10px;
+  padding:5px 50px 0 50px;
   cursor: pointer;
   width: fit-content;
 } 
