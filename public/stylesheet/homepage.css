@@ -717,8 +717,10 @@ ul{
  }
  .footers{
    display: grid ;
-   grid-template-columns: 600px 600px ;
+   grid-template-columns: 500px 500px 500px ;
    grid-template-rows: 200px;
+   grid-column-start: 1;
+   grid-column-end: 3;
  }
  .socialmedia{
    position: relative;
@@ -745,4 +747,49 @@ ul{
  #social div:hover a{
    color:gray;
  }
- 
+ .container{
+   background: url(bg.jpg) no-repeat center;
+   background-size: cover;
+   text-align: center;
+   color: white;
+   grid-column: 3;
+   margin-top: -60px;
+ }
+ .container h1{
+   font-size: 30px;
+ }
+ .email-box{
+   height: 40px;
+   display: flex;
+   justify-content: center;
+ }
+ .email-box i{
+   background:#ff0000;
+   width: 40px;
+   line-height: 40px;
+   font-size: 30px;
+ }
+ .tbox,.btn1{
+   border: none;
+   outline: none;
+ }
+ .tbox{
+   width:0px;
+   transition: 0.6s;
+ }
+ .email-box:hover> .tbox, .tbox:focus{
+   width: 260px;
+   padding: 0 10px;
+
+ }
+ .btn1{
+   background:#ff0000;
+   color:white;
+   padding: 0 10px;
+   text-transform: uppercase;
+   cursor: pointer;
+   font-size: 25px;
+ }
+ .btn1:focus{
+   border:0.5px solid white;
+ }
