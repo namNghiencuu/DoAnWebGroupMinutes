@@ -1,8 +1,15 @@
 @charset "charset";
+html{
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Open Sans",sans-serif;
   font-size: 30px;
   margin: 0px auto;
+}
+section.body1{
+  background: url(bg.jpg) no-repeat;
+  background-size: cover;
 }
 .center{
   display: flex;
@@ -103,7 +110,7 @@ a{
   height: 30px;
   border-radius: 40px;
   padding: 10px;
-  margin-left: 600px !important;
+  margin-left: 400px !important;
 }
 .search-btn{
   color: #e84118;
@@ -409,7 +416,7 @@ section{
   display: table;
 }
 .tags-list_scroller{
-  margin-right: 20px;
+  margin-right: 50px;
   margin-left: 20px;
   white-space: nowrap;
   overflow: hidden;
@@ -512,7 +519,7 @@ element.style{
 }
 .video{
   display: grid;
-  grid-template-columns: 475px 475px 475px 475px;
+  grid-template-columns: 450px 450px 450px 450px;
   grid-column-start: 1;
   grid-column-end: 4;
 }
@@ -717,10 +724,10 @@ ul{
  }
  .footers{
    display: grid ;
-   grid-template-columns: 500px 500px 500px ;
+   grid-template-columns: 400px 400px 400px 400px ;
    grid-template-rows: 200px;
    grid-column-start: 1;
-   grid-column-end: 3;
+   grid-column-end: 4;
  }
  .socialmedia{
    position: relative;
@@ -764,7 +771,7 @@ ul{
    justify-content: center;
  }
  .email-box i{
-   background:#ff0000;
+   background:#2f3542;
    width: 40px;
    line-height: 40px;
    font-size: 30px;
@@ -783,13 +790,30 @@ ul{
 
  }
  .btn1{
-   background:#ff0000;
+   background:#2f3542	;
    color:white;
    padding: 0 10px;
    text-transform: uppercase;
    cursor: pointer;
    font-size: 25px;
  }
- .btn1:focus{
+ .btn1:hover{
    border:0.5px solid white;
+ }
+ .gotopbtn{
+   grid-column: 4;
+   display: block;
+   position: fixed;
+   width: 50px;
+   height: 50px; 
+   margin-bottom: 2px;
+   background: black;
+   bottom: 40px;
+   color: white;
+   text-decoration: none;
+   text-align: center;
+   line-height: 50px;
+ }
+ .gotopbtn:hover{
+   color: white;
  }
