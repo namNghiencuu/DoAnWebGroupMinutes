@@ -261,7 +261,7 @@ section{
   margin-top: 5px;
   padding-top: 5px;
   padding-bottom: 1px;
-  margin: 0 500px 0 750px; 
+  margin: 0 500px 0 550px; 
 }
 #more div:hover a{
   color:gray;
@@ -425,7 +425,7 @@ section{
   list-style: none;
   display: block;
   padding: 0;
-  margin: 0 100px 0 500px;
+  margin: 0 100px 0 350px;
   font-size: 30px;
   -webkit-transform: translateZ(0);
     transform: translateZ(0);
@@ -519,7 +519,7 @@ element.style{
 }
 .video{
   display: grid;
-  grid-template-columns: 450px 450px 450px 450px;
+  grid-template-columns: 350px 350px 350px 350px;
   grid-column-start: 1;
   grid-column-end: 4;
 }
@@ -803,10 +803,11 @@ ul{
  .gotopbtn{
    grid-column: 4;
    display: block;
-   position: fixed;
-   width: 50px;
+   position: relative;
+   width: 120px;
    height: 50px; 
-   margin-bottom: 2px;
+   margin-top: -160px;
+   margin-left: 28px;
    background: black;
    bottom: 40px;
    color: white;
@@ -816,4 +817,12 @@ ul{
  }
  .gotopbtn:hover{
    color: white;
+   text-decoration: none;
+   background-color: #FFA07A ;
  }
+ .backtop{
+   padding-left: 3px;
+   padding-right: 3px;
+   text-decoration: none;
+ }
+ 
