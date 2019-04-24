@@ -177,7 +177,6 @@ html{
   }
   .premeir{
     background-color: #081f2c;
-    width: 700px;
     height: 40px;
     text-align: left center;
   }
@@ -196,17 +195,17 @@ html{
     text-decoration: none;
   }
   .whitespace{
+    display: relative;
     background-color: white;
     height: 100px;
     width: 100%;
   }
   .ft{
-    display: absolute;
+    display: relative;
     background-color: #081f2c;
     color: white;
     width: 20px;
     height: 20px;
-    top: 50px;
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 10px;
@@ -325,6 +324,9 @@ html{
   .resetFormat{
     text-decoration: none;
   }
+  #main{
+    display: relative;
+  }
   #main h3{
     font-weight: lighter;
     font-size: 18px;
@@ -343,7 +345,7 @@ html{
    }
    .footers{
      display: grid ;
-     grid-template-columns: 400px 400px 400px 400px ;
+     grid-template-columns: 25% 25% 25% 25% ;
      grid-template-rows: 200px;
      grid-column-start: 1;
      grid-column-end: 4;
@@ -427,7 +429,7 @@ html{
      width: 120px;
      height: 50px; 
      margin-top: -160px;
-     margin-left: 27px;
+     margin-left: 216px;
      background: black;
      bottom: 40px;
      color: white;

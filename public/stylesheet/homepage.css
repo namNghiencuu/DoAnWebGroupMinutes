@@ -68,6 +68,7 @@ a{
   height: 100px;
   margin-bottom:30px;
   font-size: 20px;
+  z-index: 1000;
 }
 #navbar div {
   display: flex;
@@ -112,7 +113,7 @@ a{
   height: 30px;
   border-radius: 40px;
   padding: 10px;
-  margin-left: 500px !important;
+  margin-left: 400px !important;
 }
 .search-btn{
   color: #e84118;
@@ -265,7 +266,7 @@ section{
   margin-top: 5px;
   padding-top: 5px;
   padding-bottom: 1px;
-  margin: 0 500px 0 730px; 
+  margin: 0 500px 0 550px; 
 }
 #more div:hover a{
   text-decoration: none;
@@ -430,7 +431,7 @@ section{
   list-style: none;
   display: block;
   padding: 0;
-  margin: 0 100px 0 500px;
+  margin: 0 100px 0 330px;
   font-size: 30px;
   -webkit-transform: translateZ(0);
     transform: translateZ(0);
@@ -523,7 +524,7 @@ element.style{
 }*/
 .video{
   display: grid;
-  grid-template-columns: 460px 460px 460px 460px;
+  grid-template-columns: 25% 25% 25% 25%;
   grid-column-start: 1;
   grid-column-end: 4;
 }
@@ -728,7 +729,7 @@ ul{
  }
  .footers{
    display: grid ;
-   grid-template-columns: 450px 450px 450px 450px ;
+   grid-template-columns: 25% 25% 25% 25% ;
    grid-template-rows: 200px;
    grid-column-start: 1;
    grid-column-end: 4;
