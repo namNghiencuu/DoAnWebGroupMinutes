@@ -6,10 +6,12 @@ body {
   font-family: "Open Sans",sans-serif;
   font-size: 30px;
   margin: 0px auto;
+  
 }
 section.body1{
   background: url(bg.jpg) no-repeat;
   background-size: cover;
+  background-color: #e3e5e6;
 }
 .center{
   display: flex;
@@ -110,7 +112,7 @@ a{
   height: 30px;
   border-radius: 40px;
   padding: 10px;
-  margin-left: 400px !important;
+  margin-left: 500px !important;
 }
 .search-btn{
   color: #e84118;
@@ -128,6 +130,7 @@ a{
   float: left;
   padding: 0;
   color: white;
+  font-weight: lighter;
   border-color: white;
   font-size: 16px;
    transition: 0.4s;
@@ -138,6 +141,7 @@ a{
   width: 200px;
   padding: 0 6px;
   text-decoration: none;
+  font-weight: lighter;
 }
 .header-social{
   display:flex;
@@ -261,10 +265,11 @@ section{
   margin-top: 5px;
   padding-top: 5px;
   padding-bottom: 1px;
-  margin: 0 500px 0 550px; 
+  margin: 0 500px 0 730px; 
 }
 #more div:hover a{
-  color:gray;
+  text-decoration: none;
+  color: white;
 }
 .mores{
   font-family:  "Open Sans",sans-serif;
@@ -425,7 +430,7 @@ section{
   list-style: none;
   display: block;
   padding: 0;
-  margin: 0 100px 0 350px;
+  margin: 0 100px 0 500px;
   font-size: 30px;
   -webkit-transform: translateZ(0);
     transform: translateZ(0);
@@ -505,8 +510,8 @@ element.style{
   left: 0;
   right: 250px;
 }
-.tags-list_previous::before{
-   font-family: arrow-left;
+/**.tags-list_previous::before{
+   font-family: goal-icons;
     speak: none;
     font-style: normal;
     font-weight: 400;
@@ -515,11 +520,10 @@ element.style{
     direction: ltr;
     unicode-bidi: embed;
     content: "\E62E";
-  font-family: goal-icons;
-}
+}*/
 .video{
   display: grid;
-  grid-template-columns: 350px 350px 350px 350px;
+  grid-template-columns: 460px 460px 460px 460px;
   grid-column-start: 1;
   grid-column-end: 4;
 }
@@ -598,9 +602,9 @@ h2{
   cursor: pointer;
   width: fit-content;
 } 
-.media-group div:hover a{
+/**.media-group div:hover a{
   color:gray;
-}
+}**/
 
 /*.bottom{
 position: absolute;
@@ -724,7 +728,7 @@ ul{
  }
  .footers{
    display: grid ;
-   grid-template-columns: 400px 400px 400px 400px ;
+   grid-template-columns: 450px 450px 450px 450px ;
    grid-template-rows: 200px;
    grid-column-start: 1;
    grid-column-end: 4;
@@ -775,6 +779,7 @@ ul{
    width: 40px;
    line-height: 40px;
    font-size: 30px;
+   padding: 0 5px 0 5px;
  }
  .tbox,.btn1{
    border: none;
@@ -807,7 +812,7 @@ ul{
    width: 120px;
    height: 50px; 
    margin-top: -160px;
-   margin-left: 28px;
+   margin-left: 214px;
    background: black;
    bottom: 40px;
    color: white;
