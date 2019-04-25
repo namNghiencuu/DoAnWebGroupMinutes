@@ -214,14 +214,15 @@ a{
   text-align: center;
  font-weight: lighter;
  font-size: 25px;
-}
-.box:hover{
-  border-color: 	#00BFFF;
+} 
+.box:hover a{
+  border-color:	#00BFFF;
   color: 	#00BFFF;
   cursor: pointer;
+  text-decoration: none;
 }
-.box:hover a{
-  border-color: 	#00BFFF;
+.box:hover {
+  border-color:	#00BFFF;
   color: 	#00BFFF;
   cursor: pointer;
   text-decoration: none;
@@ -272,15 +273,12 @@ section{
   display: block;
 }
 #more{
+  display: flex;
   background-color: #00a9ce;
   width: 200px;
   height: 40px;
-  text-align: center;
-  align-items: center;
-  margin-top: 5px;
-  padding-top: 5px;
-  padding-bottom: 1px;
-  margin: 0 500px 0 550px; 
+  justify-content: center;
+  margin-left: 700px;
 }
 #more div:hover a{
   text-decoration: none;
@@ -445,7 +443,7 @@ section{
   list-style: none;
   display: block;
   padding: 0;
-  margin: 0 100px 0 330px;
+  text-align: center;
   font-size: 30px;
   -webkit-transform: translateZ(0);
     transform: translateZ(0);
@@ -827,7 +825,7 @@ ul{
    width: 120px;
    height: 50px; 
    margin-top: -160px;
-   margin-left: 214px;
+   float: right;
    background: black;
    bottom: 40px;
    color: white;

@@ -38,6 +38,7 @@ html{
     height: 100px;
     margin-bottom:30px;
     font-size: 20px;
+    z-index: 1000;
   }
   #navbar div {
     display: flex;
@@ -161,6 +162,7 @@ html{
   }
   .results{
     grid-column: 1;
+    height: auto;
   }
   .calendar{
     grid-column: 2;
@@ -184,8 +186,9 @@ html{
     color: white;
     width: 200px;
     height: 50px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    font-weight: 500;
+    padding-top: 7px;
+    padding-bottom: 0px;
     padding-left: 10px;
     font-size: 20px;
     text-decoration: none;
@@ -195,17 +198,54 @@ html{
     text-decoration: none;
   }
   .whitespace{
-    display: relative;
+    position: relative;
     background-color: white;
-    height: 100px;
+    overflow: hidden;
     width: 100%;
   }
-  .ft{
-    display: relative;
+  .preft{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .preft1{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .ft1{
+    position: absolute;
+    grid-column: 1;
     background-color: #081f2c;
     color: white;
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    text-decoration: none;
+  }
+  .score1{
+    grid-column: 2;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  .score{
+    grid-column: 2;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  .ft{
+    position: absolute;
+    grid-column: 1;
+    background-color: #081f2c;
+    color: white;
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 10px;
@@ -214,6 +254,32 @@ html{
 .ft:hover{
   text-decoration: none;
   color: white;
+}
+.seeall{
+  display: block;
+}
+.seeall1{
+  position: relative;
+  color:#000080;
+  text-decoration: none;
+  float: right;
+  font-size: 20px;
+}
+.seeall1:hover{
+  text-decoration: none;
+}
+.premeirbefore{
+  background-color: #081f2c;
+    height: 40px;
+    text-align: left center;
+    margin-top: 45px;
+}
+.whitespace1{
+  position: relative;
+  background-color: white;
+  overflow: hidden;
+  width: 100%;
+  margin-top: 0px;
 }
   .footers>.inner{
     max-width:1258px;
