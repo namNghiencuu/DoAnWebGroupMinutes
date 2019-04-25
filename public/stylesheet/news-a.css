@@ -86,14 +86,7 @@ body {
     font-weight: lighter;
   }
 
-  .footers{
-    background-color: #ff0000;
-    margin-top: 0px; 
-    color:#fff;
-    display: block;
-    border-top:15px solid #8B0000;
-    padding:0 ;
-  }
+  
   #navbar:before,#footer:before{
     content:"";
     display: table;
@@ -103,6 +96,14 @@ body {
     display: table;
     clear:both;
     box-sizing: border-box;
+  }
+  .footers{
+    background-color: #ff0000;
+    margin-top: 0px; 
+    color:#fff;
+    display: block;
+    border-top:15px solid #8B0000;
+    padding:0 ;
   }
   .footers>.inner{
     max-width:1258px;
@@ -203,8 +204,10 @@ body {
    }
    .footers{
      display: grid ;
-     grid-template-columns: 600px 600px ;
+     grid-template-columns: 25% 25% 25% 25% ;
      grid-template-rows: 200px;
+     grid-column-start: 1;
+     grid-column-end: 4;
    }
    .socialmedia{
      position: relative;
@@ -307,4 +310,77 @@ body {
     display: list-item;
     text-align: -webkit-match-parent;
    }
+   .container{
+    background: url(bg.jpg) no-repeat center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    grid-column: 3;
+    margin-top: -60px;
+  }
+  .container h1{
+    font-size: 30px;
+  }
+  .email-box{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+  }
+  .email-box i{
+    background:#2f3542;
+    width: 40px;
+    line-height: 40px;
+    font-size: 30px;
+    padding: 0 5px 0 5px;
+  }
+  .tbox,.btn1{
+    border: none;
+    outline: none;
+  }
+  .tbox{
+    width:0px;
+    transition: 0.6s;
+  }
+  .email-box:hover> .tbox, .tbox:focus{
+    width: 260px;
+    padding: 0 10px;
+ 
+  }
+  .btn1{
+    background:#2f3542	;
+    color:white;
+    padding: 0 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 25px;
+  }
+  .btn1:hover{
+    border:0.5px solid white;
+  }
+  .gotopbtn{
+    grid-column: 4;
+    display: block;
+    position: relative;
+    width: 120px;
+    height: 50px; 
+    margin-top: -160px;
+    margin-left: 216px;
+    background: black;
+    bottom: 40px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+  }
+  .gotopbtn:hover{
+    color: white;
+    text-decoration: none;
+    background-color: #FFA07A ;
+  }
+  .backtop{
+    padding-left: 3px;
+    padding-right: 3px;
+    text-decoration: none;
+  }
+  
 

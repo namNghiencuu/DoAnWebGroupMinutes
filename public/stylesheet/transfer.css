@@ -513,4 +513,32 @@ html{
      padding-right: 3px;
      text-decoration: none;
    }
-   
+.calendar{
+  margin: auto;
+  font-family:  Helvetica;
+  margin-top: 0;
+  width: 80%;
+}
+.month {
+  text-align: center;
+  background: #081f2c;
+  color: white;
+  letter-spacing: 1px;
+  padding: 20px;
+  border: 0.5px solid #E6E6FA;
+}
+table,th,td{
+  width: 100%;
+  table-layout: fixed;
+  text-align: center;
+  font-size: 18px;
+  border-collapse: collapse;
+  border: 0.5px solid white;
+}
+tr,th,td{
+  padding: 15px;
+}
+td:hover{
+  background: #081f2c;
+  color: white;
+}
