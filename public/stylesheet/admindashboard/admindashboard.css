@@ -141,3 +141,8 @@
 .todo-item input[type="checkbox"]:checked + label.detail {
   text-decoration: line-through;
 }
+
+.modal-footer {
+  display: flex;
+  justify-content: center;
+}
