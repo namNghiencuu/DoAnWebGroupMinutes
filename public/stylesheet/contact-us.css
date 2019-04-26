@@ -38,6 +38,7 @@ html{
     height: 100px;
     margin-bottom:30px;
     font-size: 20px;
+    z-index: 1000;
   }
   #navbar div {
     display: flex;
@@ -346,7 +347,7 @@ html{
      text-align: center;
      color: white;
      grid-column: 3;
-     margin-top: -60px;
+     margin-top: -50px;
    }
    .container h1{
      font-size: 30px;
