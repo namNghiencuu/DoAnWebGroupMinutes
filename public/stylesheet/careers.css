@@ -164,6 +164,72 @@ html {
     font-size: 40px;
     font-family:  Arial, Helvetica, sans-serif;
 }
+.whitespace{
+  position: relative;
+  background-color: white;
+  overflow: hidden;
+  width: 50%;
+  margin-left: 350px;
+}
+.preft{
+  display:grid;
+  grid-template-columns: 50% 50%;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.preft1{
+  display:grid;
+  grid-template-columns: 50% 50%;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.ft1{
+  grid-column: 2;
+  background-color: #081f2c;
+  color: white;
+  width: 70px;
+  height: 40px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 1px;
+  text-decoration: none;
+}
+.score1{
+  grid-column: 1;
+  font-size: 20px;
+}
+.score{
+  grid-column: 1;
+  font-size: 20px;
+}
+.ft{
+  grid-column: 2;
+  background-color: #081f2c;
+  color: white;
+  width: 75px;
+  height: 40px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 1px;
+  text-decoration: none;
+}
+.ft:hover{
+text-decoration: none;
+color: white;
+}
+.seeall{
+display: block;
+}
+.seeall1{
+position: relative;
+color:#000080;
+text-decoration: none;
+float: right;
+font-size: 20px;
+}
+.seeall1:hover{
+text-decoration: none;
+}
   .footers {
     background-color: #ff0000;
     margin-top: 0px;
@@ -365,7 +431,7 @@ html {
     grid-column: 4;
     display: block;
     position: relative;
-    width: 120px;
+    width:120px;
     height: 50px;
     margin-top: -160px;
     float: right;
