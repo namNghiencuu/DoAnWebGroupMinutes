@@ -368,10 +368,6 @@ section {
 	color: #081f2c;
 	font-size: 30px;
 }
-.title-wrapper1:hover {
-	text-decoration: none;
-	color: white;
-}
 .whatnext {
 	grid-column: 1;
 }

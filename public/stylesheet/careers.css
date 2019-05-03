@@ -204,12 +204,20 @@ a {
 	font-size: 20px;
 	grid-row: 2;
 	margin-top: 25px;
+	cursor: pointer;
+}
+.score1:hover {
+	background-color: white;
 }
 .score {
 	grid-column: 1;
 	font-size: 20px;
 	grid-row: 2;
 	margin-top: 25px;
+	cursor: pointer;
+}
+.score:hover {
+	background-color: white;
 }
 .ft11 {
 	grid-column: 2;
