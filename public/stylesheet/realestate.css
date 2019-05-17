@@ -175,7 +175,7 @@ section.body1 {
   padding: 0 15px 25px 15px;
 }
 .whitespace1:hover {
-  transition: all 800ms ease 0s;
+  transition: all 400ms ease 0s;
   grid-column: 2;
   box-shadow: red 0px 5px 15px;
 }
@@ -186,7 +186,7 @@ section.body1 {
   padding: 0 15px 25px 15px;
 }
 .whitespace2:hover {
-  transition: all 800ms ease 0s;
+  transition: all 400ms ease 0s;
   grid-column: 3;
   box-shadow: red 0px 5px 15px;
 }
@@ -198,7 +198,7 @@ section.body1 {
 }
 .whitespace:hover {
   grid-column: 1;
-  transition: all 800ms ease 0s;
+  transition: all 400ms ease 0s;
   box-shadow: red 0px 5px 15px;
 }
 .buyhomeimg {
@@ -235,6 +235,40 @@ section.body1 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   padding-bottom: 5px;
 }
+.searchsell {
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+  justify-content: center;
+  margin-left: 80px;
+  width: 55%;
+  height: 45px;
+  background-color: white;
+  border: 0.5px solid black;
+}
+.searchsell a {
+  color: red;
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding-bottom: 5px;
+}
+.searchrent {
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+  justify-content: center;
+  margin-left: 80px;
+  width: 55%;
+  height: 45px;
+  background-color: white;
+  border: 0.5px solid black;
+}
+.searchrent a {
+  color: red;
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding-bottom: 5px;
+}
 /*Footer*/
 .footers {
   background-color: white;
@@ -242,8 +276,9 @@ section.body1 {
   display: block;
   padding: 0;
   margin-top: 20px;
+  height: auto;
 }
-#navbar:before,
+/*#navbar:before,
 #footer:before {
   content: "";
   display: table;
@@ -254,7 +289,7 @@ section.body1 {
   display: table;
   clear: both;
   box-sizing: border-box;
-}
+}*/
 .footers > .inner {
   max-width: 1258px;
   grid-column: 1;
@@ -294,7 +329,6 @@ div {
   width: 30%;
   float: left;
   clear: none;
-  margin-bottom: 25px;
   margin-top: 40px;
 }
 .footermenu {
@@ -366,6 +400,11 @@ ul li {
   transform: translate(-53%, -50%);
   grid-column: 2;
 }
+.socialmedia h1 {
+  font-size: 25px;
+  font-weight: lighter;
+  margin-top: 260px;
+}
 .socialmedia ul div {
   list-style: none;
   display: inline-block;
@@ -374,6 +413,9 @@ ul li {
   padding: 1px;
   color: black;
   transition: 0.5s;
+}
+.footersocial {
+  margin-top: 3px;
 }
 .socialmedia a {
   color: black;
@@ -385,7 +427,7 @@ div:hover {
   color: #3b5998;
 }
 #social div .icon-insta :hover {
-  color: #2c6a93;
+  color: #e4405f;
 }
 #social div .icon-twit :hover {
   color: #00b6f1;
@@ -397,22 +439,25 @@ div:hover {
   background: url(bg.jpg) no-repeat center;
   background-size: cover;
   text-align: center;
-  color: white;
+  color: black;
   grid-column: 3;
-  margin-top: -130px;
-  margin-left: 50px;
+  margin-left: 70px;
 }
 .container h1 {
-  font-size: 30px;
+  font-weight: lighter;
+  margin-top: 160px;
+  font-size: 25px;
 }
 .email-box {
   height: 40px;
   display: flex;
+  padding-top: 15px;
   justify-content: center;
 }
 .email-box i {
   background: black;
   width: 40px;
+  color: white;
   line-height: 40px;
   font-size: 30px;
   padding: 0 5px 0 5px;
@@ -449,19 +494,19 @@ div:hover {
   position: relative;
   width: 200px;
   height: 50px;
-  margin-top: -160px;
-  float: right;
+  margin-top: 30px;
+  margin-left: 220px;
   bottom: 40px;
   color: black;
   text-decoration: none;
   text-align: center;
   line-height: 50px;
 }
-.gotopbtn span {
-  font-size: 30px;
+/*.gotopbtn span {
+  font-size: 25px;
   padding-right: 2px;
-}
+}*/
 .gotopbtn:hover {
-  color: ;
+  color: red;
   text-decoration: none;
 }
