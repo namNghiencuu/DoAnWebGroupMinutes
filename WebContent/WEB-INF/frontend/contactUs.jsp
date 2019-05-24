@@ -3,8 +3,8 @@
 
 <head>
     <title> Football News, Live Scores, Results & Transfer | Minutes.com </title>
-    <link rel="shortcut icon" href="../public/images/PageLogo/logo.png">
-    <link rel="stylesheet" type="text/css" href="../public/stylesheet/contact-us.css" />
+    <link rel="shortcut icon" href="/MinutesServer/images/PageLogo/logo.png">
+    <link rel="stylesheet" type="text/css" href="/MinutesServer/stylesheet/contact-us.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="https://bit.ly/2Jc8yDJ">
@@ -16,7 +16,7 @@
     <section class="body1">
         <div id="navbar">
             <div class="logo">
-                <a><img src="../public/images/PageLogo/MinutesIcon.png" width="inherit;" /></a>
+                <a><img src="/MinutesServer/images/PageLogo/MinutesIcon.png" width="inherit;" /></a>
             </div>
             <div><a href="./homepage.html">News</a>
             </div>
@@ -29,7 +29,7 @@
                     <i class="fas fa-search"></i>
                 </a>
             </div>
-            <div><img src="../public/images/English icon.png" width="25px;" /> <a class="abc"
+            <div><img src="/MinutesServer/images/English icon.png" width="25px;" /> <a class="abc"
                     href="english">&emsp;English</a>
             </div>
         </div>
@@ -56,7 +56,7 @@
                 <div class="logofooter">
                     <a href="file:///C:/Users/Nguyen%20Huy%20Cuong/Downloads/Documents/Web%20App%20Dev/DoAnWebGroupMinutes/homepage.html"
                         class="footerlogo" id="logofooters">
-                        <img src="../public/images/PageLogo/MinutesIcon.png" class="footerimage" />
+                        <img src="/MinutesServer/images/PageLogo/MinutesIcon.png" class="footerimage" />
                     </a>
                 </div>
                 <div id="footermenu" class="footermenu" role="navigation">

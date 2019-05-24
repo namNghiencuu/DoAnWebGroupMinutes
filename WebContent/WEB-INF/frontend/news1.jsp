@@ -3,8 +3,8 @@
 
 <head>
   <title> Football News, Live Scores, Results & Transfer | Minutes.com </title>
-  <link rel="shortcut icon" href="../public/images/PageLogo/logo.png">
-  <link rel="stylesheet" type="text/css" href="../public/stylesheet/news1.css" />
+  <link rel="shortcut icon" href="/MinutesServer/images/PageLogo/logo.png">
+  <link rel="stylesheet" type="text/css" href="/MinutesServer/stylesheet/news1.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet" href="https://bit.ly/2Jc8yDJ">
@@ -16,7 +16,7 @@
   <section class="body1">
     <div id="navbar">
       <div class="logo">
-        <a><img src="../public/images/PageLogo/MinutesIcon.png" width="inherit;" /></a>
+        <a><img src="/MinutesServer/images/PageLogo/MinutesIcon.png" width="inherit;" /></a>
       </div>
       <div><a href="./homepage.html">News</a>
       </div>
@@ -29,7 +29,7 @@
           <i class="fas fa-search"></i>
         </a>
       </div>
-      <div><img src=".../public/images/English icon.png" width="25px;" /> <a class="abc"
+      <div><img src="./MinutesServer/images/English icon.png" width="25px;" /> <a class="abc"
           href="english">&emsp;English</a>
       </div>
     </div>
@@ -39,7 +39,7 @@
         <h2>Manchester United got massive win over Manchester City</h2>
         <div class="content-Manchester">
           <p class="img">
-            <img src="../public/images/pictures/manchester.png">
+            <img src="/MinutesServer/images/pictures/manchester.png">
           </p>
           <p>
             Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
@@ -74,7 +74,7 @@
           <li><a href="#">Cras justo odio</a></li>
         </ol>
         <a href="#">
-          <img src="../public/images/pictures/bannera.png">
+          <img src="/MinutesServer/images/pictures/bannera.png">
         </a>
       </div>
     </div>
@@ -83,7 +83,7 @@
       <div class="inner">
         <div class="logofooter">
           <a href="./homepage.html" class="footerlogo" id="logofooters">
-            <img src="../public/images/PageLogo/MinutesIcon.png" class="footerimage" />
+            <img src="/MinutesServer/images/PageLogo/MinutesIcon.png" class="footerimage" />
           </a>
         </div>
         <div id="footermenu" class="footermenu" role="navigation">

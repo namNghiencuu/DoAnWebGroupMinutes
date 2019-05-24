@@ -3,8 +3,8 @@
 
 <head>
   <title> Football News, Live Scores, Results & Transfer | Minutes.com </title>
-  <link rel="shortcut icon" href="../public/images/PageLogo/logo.png">
-  <link rel="stylesheet" type="text/css" href="../public/stylesheet/homepage.css" />
+  <link rel="shortcut icon" href="/MinutesServer/images/PageLogo/logo.png">
+  <link rel="stylesheet" type="text/css" href="/MinutesServer/stylesheet/homepage.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet" href="https://bit.ly/2Jc8yDJ">
@@ -18,7 +18,7 @@
   <section class="body1">
     <div id="navbar">
       <div class="logo" >
-        <a><img src="../public/images/PageLogo/MinutesIcon.png" width="inherit;" /></a>
+        <a><img src="/MinutesServer/images/PageLogo/MinutesIcon.png" width="inherit;" /></a>
       </div>
       <div><a href="./homepage.html">News</a>
       </div>
@@ -32,7 +32,7 @@
           <i class="fas fa-search"></i>
         </a>
       </div>
-      <div><img src="../public/images/English icon.png" width="25px;" /> <a class="abc" href="english">English</a></div>
+      <div><img src="/MinutesServer/images/English icon.png" width="25px;" /> <a class="abc" href="english">English</a></div>
     </div>
     <div id="slider">
       <div id="headerSlider" class="carousel slide" data-ride="carousel">
@@ -43,7 +43,7 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="../public/images/pictures/banner1.png" class="d-block img-fluid">
+            <img src="/MinutesServer/images/pictures/banner1.png" class="d-block img-fluid">
             <div class="carousel-caption">
               <h5>
                 <a href="./news-a.html" style="color:white" class="a12"> Talented young star in Bundesliga </a>
@@ -51,13 +51,13 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img src="../public/images/pictures/banner2.png" class="d-block img-fluid">
+            <img src="/MinutesServer/images/pictures/banner2.png" class="d-block img-fluid">
             <div class="carousel-caption">
               <h5>Dortmund's big player keen on moving to Premier League</h5>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="../public/images/pictures/banner3.png" class="d-block img-fluid">
+            <img src="/MinutesServer/images/pictures/banner3.png" class="d-block img-fluid">
             <div class="carousel-caption">
               <h5>Most valuated striker set to miss match vs Man Utd</h5>
             </div>
@@ -290,7 +290,7 @@
         <div class="inner">
           <div class="logofooter">
             <a href="./homepage.html" class="footerlogo" id="logofooters">
-              <img src="../public/images/PageLogo/MinutesIcon.png" class="footerimage" />
+              <img src="/MinutesServer/images/PageLogo/MinutesIcon.png" class="footerimage" />
             </a>
           </div>
           <div id="footermenu" class="footermenu" role="navigation">

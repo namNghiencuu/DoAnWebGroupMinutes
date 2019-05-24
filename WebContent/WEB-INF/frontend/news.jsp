@@ -3,8 +3,8 @@
 
 <head>
   <title>Talented young stars in Bundesliga | Minutes.com</title>
-  <link rel="shortcut icon" href="../public/images/PageLogo/logo.png">
-  <link rel="stylesheet" type="text/css" href="../public/stylesheet/news-a.css" />
+  <link rel="shortcut icon" href="/MinutesServer/images/PageLogo/logo.png">
+  <link rel="stylesheet" type="text/css" href="/MinutesServer/stylesheet/news-a.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet" href="https://bit.ly/2Jc8yDJ">
@@ -18,13 +18,13 @@
 
   <div id="navbar">
     <div class="logo">
-      <a><img src="../public/images/PageLogo/MinutesIcon.png" width="inherit;" /></a>
+      <a><img src="/MinutesServer/images/PageLogo/MinutesIcon.png" width="inherit;" /></a>
     </div>
     <div><a href="./homepage.html">News</a></div>
     <div><a href="./transfer.html">Live Scores</a></div>
     <div><a href="Leagues&Cups">Leagues & Cups</a></div>
     <div><a href="./test1.html">Teams</a></div>
-    <div><img src="../public/images/English icon.png" width="25px;" /> <a class="abc" href="english">English</a></div>
+    <div><img src="/MinutesServer/images/English icon.png" width="25px;" /> <a class="abc" href="english">English</a></div>
   </div>
 
 
@@ -33,7 +33,7 @@
       <div class="contain">
         <div class="align-center">
           <h2>Talented young stars in Bundesliga</h2>
-          <h3><img src="../public/images/pictures/messi.jpg" class="messi-img"></h3>
+          <h3><img src="/MinutesServer/images/pictures/messi.jpg" class="messi-img"></h3>
           <p class="contain" class="messi">
             Champions League elimination to Spurs will be put to one side for Pep Guardiola when the two teams tangle in
             the Premier League on Saturday lunchtime
@@ -81,7 +81,7 @@
     <div class="inner">
       <div class="logofooter">
         <a href="./homepage.html" class="footerlogo" id="logofooters">
-          <img src="../public/images/PageLogo/MinutesIcon.png" class="footerimage" />
+          <img src="/MinutesServer/images/PageLogo/MinutesIcon.png" class="footerimage" />
         </a>
       </div>
       <div id="footermenu" class="footermenu" role="navigation">

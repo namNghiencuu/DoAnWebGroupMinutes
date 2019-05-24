@@ -2,11 +2,11 @@
 <html>
   <head>
     <title>Football News, Live Scores, Results & Transfer | Minutes.com</title>
-    <link rel="shortcut icon" href="../public/images/PageLogo/logo.png" />
+    <link rel="shortcut icon" href="/MinutesServer/images/PageLogo/logo.png" />
     <link
       rel="stylesheet"
       type="text/css"
-      href="../public/stylesheet/transfer.css"
+      href="/MinutesServer/stylesheet/transfer.css"
     />
     <link
       rel="stylesheet"
@@ -25,7 +25,7 @@
         <div class="logo">
           <a
             ><img
-              src="../public/images/PageLogo/MinutesIcon.png"
+              src="/MinutesServer/images/PageLogo/MinutesIcon.png"
               width="inherit;"
           /></a>
         </div>
@@ -45,7 +45,7 @@
           </a>
         </div>
         <div>
-          <img src="../public/images/English icon.png" width="25px;" />
+          <img src="/MinutesServer/images/English icon.png" width="25px;" />
           <a class="abc" href="english">English</a>
         </div>
       </div>
@@ -197,7 +197,7 @@
           <div class="logofooter">
             <a href="./homepage.html" class="footerlogo" id="logofooters">
               <img
-                src="../public/images/PageLogo/MinutesIcon.png"
+                src="/MinutesServer/images/PageLogo/MinutesIcon.png"
                 class="footerimage"
               />
             </a>

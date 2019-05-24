@@ -3,7 +3,7 @@
 
 <head>
   <title> Football News, Live Scores, Results & Transfer | Minutes.com </title>
-  <link rel="shortcut icon" href="../public/images/PageLogo/logo.png">
+  <link rel="shortcut icon" href="/MinutesServer/images/PageLogo/logo.png">
   <link rel="stylesheet" type="text/css" href="./public/stylesheet/transfer.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
