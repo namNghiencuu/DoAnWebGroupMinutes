@@ -1,15 +1,48 @@
 <!DOCTYPE html>
 <html>
-  <head> </head>
+  <head>
+    <title>Real Estate Platform</title>
+    <link rel="shortcut icon" href="../public/images/PageLogo/logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+      <meta
+      charset="utf-8"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../public/stylesheet/menuestate.css"
+    />
+    <script>
+      window.FontAwesomeConfig = {
+        searchPseudoElements: true
+      };
+    </script>
+    <link
+      href="https://use.fontawesome.com/releases/v5.0.1/css/all.css"
+      rel="stylesheet"
+    />
+    <script
+      data-search-pseudo-elements
+      defer
+      src="https://use.fontawesome.com/releases/latest/js/all.js"
+      integrity="sha384-L469/ELG4Bg9sDQbl0hvjMq8pOcqFgkSpwhwnslzvVVGpDjYJ6wJJyYjvG3u8XW7"
+      crossorigin="anonymous"
+    ></script>
+  </head>
   <body>
-    <section class="body1" <!--Header-->
+    <section class="body1">
+      <!--Header-->
       <div id="navbar">
         <div class="logo">
           <a
             ><img src="../public/images/PageLogo/logo_main.png" width="inherit;"
           /></a>
         </div>
-        <div><a href="">Buy</a></div>
+        <div class="fitem fitem_ffile"><a href="">Buy</a></div>
         <div><a href="">Rent</a></div>
         <div><a href="">Sell</a></div>
         <div><a href="">Agent Finder</a></div>
@@ -17,74 +50,56 @@
         <div><a href="" class="abc">Help</a></div>
       </div>
       <!--Main-->
-      <div id="mainpage">
-        <div class="findhome">
-          <img src="../public/images/lancastereden.jpg" class="imgfinding" />
-          <div class="text">
-            <h2>
-              <strong>Reimagine home</strong>
-            </h2>
-            <h3>High persuasion , High quality</h3>
-          </div>
-          <div class="search-box">
-            <input
-              class="search-txt"
-              type="text"
-              name=""
-              placeholder="Enter an address , neighborhood , city or Zip code"
-            />
-            <a class="search-btn" href="#">
+      <div class="main">
+        <strong class="text" >Can I help you?</strong>
+        <section>
+          <div class="search">
+            <div class="icon">
               <i class="fas fa-search"></i>
-            </a>
+            </div>
+            <form class="form">
+              <div class="row">
+                <div class="option">
+                  <select>
+                    <option>Property Type
+                        <option>Home for Sale</option>
+                        <option>Home For Rent</option>
+                    </option>
+                  </select>
+                </div>
+                <div class="option">
+                  <select>
+                    <option>City</option>
+                    <option>Ha Noi</option>
+                    <option>Ho Chi Minh</option>
+                    <option>Can Tho</option>
+                  </select>
+                </div>
+                <div class="option">
+                  <select>
+                    <option>District</option>
+                    <option>District 4</option>
+                    <option>District 1</option>
+                    <option>Phu Nhuan District</option>
+                  </select>
+                </div>
+                <div class="option">
+                  <select>
+                    <option>Price</option>
+                    <option>10$-15$</option>
+                    <option>16$-21$</option>
+                    <option>22$-</option>
+                  </select>
+                </div>
+                <div class="option">
+                  <input type="submit" name="" value="Search" />
+                </div>
+              </div>
+            </form>
           </div>
-        </div>
-        <h2 class="slogan">
-          We’re reimagining how you buy, sell and rent. It’s now
-        </h2>
-        <h2 class="slogan">
-          easier to get into a place you love. So let’s do this, together.
-        </h2>
-        <hr width="15%" text-align="center" color="red " />
-        <div class="part">
-          <div class="whitespace">
-            <img
-              src="../public/images/pictures/buyhome.png"
-              class="buyhomeimg"
-            />
-            <p class="buyhometext">Buy a Home</p>
-            <p class="buyhometext1">
-              Find your place with an immersive photo experience and the most
-              listings, including things you won’t find anywhere else.
-            </p>
-            <button class="searchbuy"><a>Search homes</a></button>
-          </div>
-          <div class="whitespace1">
-            <img
-              src="../public/images/pictures/sellhome.png"
-              class="buyhomeimg"
-            />
-            <p class="buyhometext">Sell a Home</p>
-            <p class="buyhometext1">
-              Whether you sell with new Minutes Offers or take another approach,
-              we’ll help you navigate the path to a successful sale.
-            </p>
-            <button class="searchsell"><a>See your options</a></button>
-          </div>
-          <div class="whitespace2">
-            <img
-              src="../public/images/pictures/renthome.png"
-              class="buyhomeimg"
-            />
-            <p class="buyhometext">Rent a Home</p>
-            <p class="buyhometext1">
-              We’re creating a seamless online experience – from shopping on the
-              largest rental network, to applying, to paying rent.
-            </p>
-            <button class="searchrent"><a>Find rentals</a></button>
-          </div>
-        </div>
+        </section>
       </div>
-      <!--footer-->
+      <!--Footer-->
       <div id="footer" class="footers" role="contentinfo">
         <div class="inner">
           <div class="logofooter">

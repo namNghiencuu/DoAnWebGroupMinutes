@@ -80,194 +80,76 @@ section.body1 {
   font-weight: lighter;
 }
 /*MainPage*/
-#mainpage {
-  width: 100%;
-  height: 100%;
-  margin-top: -30px;
-}
-.findhome {
+.search {
   position: relative;
+  margin-top: 75px;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  transform: translateY(-50%);
+  padding: 20px 0 20px 60px;
+  min-height: 60px;
+  width: auto;
+  box-sizing: border-box;
+  background: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
-.imgfinding {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  -webkit-filter: brightness(50%);
-}
-.text {
+.search .icon {
   position: absolute;
-  text-align: center;
-  justify-content: center;
-  margin-top: -650px;
-  margin-left: 430px;
-}
-.text h2 {
-  color: white;
-  font-size: 65px;
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-filter: sepia(100%);
-  font-weight: lighter;
-}
-.text h3 {
-  color: white;
-  font-size: 35px;
-  font-family: "Times New Roman", Times, serif;
-  -webkit-filter: sepia(100%);
-  font-weight: lighter;
-}
-.search-box {
-  position: absolute;
-  cursor: pointer;
-  background-color: white;
-  top: 45%;
-  height: 45px;
-  padding: 10px;
-  margin-left: 350px !important;
-  width: 650px;
-}
-.search-box:hover {
-  border: 1px solid red;
-}
-.search-btn {
-  position: relative;
+  top: 33px;
+  left: 20px;
+  font-size: 25px;
   color: red;
-  float: right;
-  width: 15px;
-  margin-right: 15px;
-  text-decoration: none;
-  padding-top: 6px;
 }
-.search-txt {
+.search .row {
+  display: flex;
+}
+.search .row .option {
+  flex: 1;
   position: relative;
-  cursor: pointer;
+  padding: 0;
+  border-right: 1px solid #ccc;
+}
+.search .row .option :focus {
+  outline: 0;
+}
+.search .row .option select {
   border: none;
-  outline: none;
-  float: left;
+  cursor: pointer;
+  font-size: 25px;
   color: black;
-  font-weight: lighter;
-  font-size: 20px;
-  justify-content: center;
-  height: 30px;
-  width: 450px;
-  padding-top: 8px;
-  padding-left: 15px;
-}
-.search-txt:focus {
-  border: none;
-}
-.slogan {
-  font-size: 30px;
-  text-align: center;
-  justify-content: center;
-  font-weight: bold;
-  font-family: "Times New Roman", Times, serif;
-}
-.part {
-  display: grid;
-  grid-template-columns: 30% 30% 30%;
-  grid-column-gap: 60px;
-  padding: 0 30px 0 30px;
-}
-.whitespace {
-  grid-column: 1;
-  cursor: pointer;
-  background-color: white;
-  padding: 0 15px 25px 15px;
-}
-.whitespace1:hover {
-  transition: all 400ms ease 0s;
-  grid-column: 2;
-  box-shadow: red 0px 5px 15px;
-}
-.whitespace1 {
-  grid-column: 2;
-  cursor: pointer;
-  background-color: white;
-  padding: 0 15px 25px 15px;
-}
-.whitespace2:hover {
-  transition: all 400ms ease 0s;
-  grid-column: 3;
-  box-shadow: red 0px 5px 15px;
-}
-.whitespace2 {
-  grid-column: 3;
-  cursor: pointer;
-  background-color: white;
-  padding: 0 15px 25px 15px;
-}
-.whitespace:hover {
-  grid-column: 1;
-  transition: all 400ms ease 0s;
-  box-shadow: red 0px 5px 15px;
-}
-.buyhomeimg {
+  padding: 10px 40px;
+  -webkit-appearance: none;
   width: 100%;
+  background: transparent;
+}
+.select .row .option::before {
+  content: "\f107";
+  font-family: "Font Awesome\ 5 Free";
+  font-weight: 900;
+  position: absolute;
+  color: #848484;
+  right: 10px;
+  top: 15px;
+  font-size: 20px;
+}
+.select .row .option:last-child::before {
+  display: none;
+}
+.search .row .option:last-child {
+  padding: 0 20px;
+  border-right: none;
+  box-sizing: border-box;
+}
+.search .row .option input[type="submit"] {
+  border: none;
+  cursor: pointer;
+  background: red;
+  color: white;
   height: 100%;
-}
-.buyhometext {
-  position: relative;
-  text-align: center;
-  font-weight: bold;
-  padding: 0 5px 0 5px;
-}
-.buyhometext1 {
-  position: relative;
-  text-align: center;
-  font-weight: lighter;
-  font-size: 20px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-.searchbuy {
-  position: relative;
-  cursor: pointer;
-  text-align: center;
-  justify-content: center;
-  margin-left: 80px;
-  width: 55%;
-  height: 45px;
-  background-color: white;
-  border: 0.5px solid black;
-}
-.searchbuy a {
-  color: red;
-  font-size: 20px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  padding-bottom: 5px;
-}
-.searchsell {
-  position: relative;
-  cursor: pointer;
-  text-align: center;
-  justify-content: center;
-  margin-left: 80px;
-  width: 55%;
-  height: 45px;
-  background-color: white;
-  border: 0.5px solid black;
-}
-.searchsell a {
-  color: red;
-  font-size: 20px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  padding-bottom: 5px;
-}
-.searchrent {
-  position: relative;
-  cursor: pointer;
-  text-align: center;
-  justify-content: center;
-  margin-left: 80px;
-  width: 55%;
-  height: 45px;
-  background-color: white;
-  border: 0.5px solid black;
-}
-.searchrent a {
-  color: red;
-  font-size: 20px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  padding-bottom: 5px;
+  width: 100%;
+  outline: none;
+  font-size: 25px;
+  margin-right: 20px;
 }
 /*Footer*/
 .footers {
@@ -279,17 +161,17 @@ section.body1 {
   height: auto;
 }
 /*#navbar:before,
-#footer:before {
-  content: "";
-  display: table;
-}
-#navbar:after,
-#footer:after {
-  content: "";
-  display: table;
-  clear: both;
-  box-sizing: border-box;
-}*/
+  #footer:before {
+    content: "";
+    display: table;
+  }
+  #navbar:after,
+  #footer:after {
+    content: "";
+    display: table;
+    clear: both;
+    box-sizing: border-box;
+  }*/
 .footers > .inner {
   max-width: 1258px;
   grid-column: 1;
@@ -319,9 +201,9 @@ div {
   height: 150px;
 }
 /**a.link,a:visited{
-  color: #e10a0a;
-  text-decoration: none;
-}**/
+    color: #e10a0a;
+    text-decoration: none;
+  }**/
 .footers a {
   transition: all 0.3s ease-out;
 }
@@ -381,8 +263,8 @@ ul li {
   line-height: 5px;
 }
 /** li{
-   display: list-item;
- }**/
+     display: list-item;
+   }**/
 .menu {
   margin-top: 20px;
 }
@@ -503,9 +385,9 @@ div:hover {
   line-height: 50px;
 }
 /*.gotopbtn span {
-  font-size: 25px;
-  padding-right: 2px;
-}*/
+    font-size: 25px;
+    padding-right: 2px;
+  }*/
 .gotopbtn:hover {
   color: red;
   text-decoration: none;
