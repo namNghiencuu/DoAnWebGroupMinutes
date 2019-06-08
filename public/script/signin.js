@@ -16,7 +16,7 @@ $(document).ready(function() {
     const pbText = $(".form-4 .progress-bar_text");
     if (len === 0) {
       $(this).css("border-color", "#2F96EF");
-      changeText(pbText, "Password is blank", "#aaa");
+      changeText(pbText, "Password must be at least 6 character", "#aaa");
     } else if (len > 0 && len <= 4) {
       $(this).css("border-color", "#FF4B47");
       changeText(pbText, "Too weak", "#FF4B47");

@@ -138,20 +138,113 @@ a {
 }
 /*Main*/
 .results {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-column-start: 1;
+  grid-column-end: 4;
   height: auto;
-}
-.menumain {
-  width: 50%;
-  display: block;
   text-align: center;
   align-items: center;
+  margin: 0 10px 10px 10px;
+}
+.back {
+  background: #f1f1f1;
+  transform: perspective(200px) rotateY(180deg);
+}
+.front {
+  transform: perspective(200px) rotateY(0deg);
+}
+.back-content {
+  color: #2c3e50;
+  text-align: center;
+  width: 100%;
+}
+.back {
+  background: #f1f1f1;
+  transform: perspective(200px) rotateY(180deg);
+}
+.front {
+  transform: perspective(200px) rotateY(0deg);
+}
+.card:hover > .back {
+  transform: perspective(600px) rotateY(0deg);
+}
+.card:hover > .front {
+  transform: perspective(600px) rotateY(180deg);
+}
+.sm a {
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
   justify-content: center;
-  margin-left: 320px;
+  align-items: center;
+  color: #2c3e50;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+.sm a:hover {
+  background: red;
+  color: white;
+}
+.sm1 a {
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  color: #2c3e50;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+.sm1 a:hover {
+  background: blue;
+  color: white;
+}
+.back {
+  width: 100%;
+  height: fit-content;
+  overflow: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  transition: transform 0.6 linear;
+}
+.manimg {
+  width: 17%;
+}
+.whitespace::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+
+.whitespace::-webkit-scrollbar {
+  width: 12px;
+  background-color: #f5f5f5;
+}
+
+.whitespace::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #b2edce;
+}
+.goalmu {
+  grid-column: 1;
+}
+.defmu {
+  grid-column: 2;
+}
+.midmu {
+  grid-column: 3;
+}
+.stmu {
+  grid-column: 4;
+}
+.menumain {
+  width: auto;
+  display: block;
 }
 .premeir {
   background-color: #081f2c;
-  height: 40px;
-  text-align: left center;
 }
 .premeir1 {
   color: white;
@@ -171,7 +264,9 @@ a {
 .whitespace {
   position: relative;
   background-color: white;
-  height: auto;
+  overflow: scroll;
+  overflow-x: hidden;
+  height: 50vh;
   width: 100%;
 }
 .preft {
@@ -192,7 +287,7 @@ a {
 }
 .gk {
   margin-top: -15px;
-  width: 60%;
+  width: 50%;
 }
 .tuan {
   margin-top: -8px;
@@ -225,8 +320,7 @@ a {
 .whitespace1 {
   position: relative;
   background-color: white;
-  overflow: hidden;
-  width: 100%;
+  width: auto;
   margin-top: 0px;
 }
 /*Footer*/
