@@ -2,21 +2,21 @@
 <html>
 <head>
 <title>Real Estate Platform</title>
-<link rel="shortcut icon" href="../public/images/PageLogo/logo.png" />
+<link rel="shortcut icon" href="${pageContext.request.contextPath}/images/PageLogo/logo.png" />
 <link rel="stylesheet"
 	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
 	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
 	crossorigin="anonymous" />
 <meta charset="utf-8" />
 <link rel="stylesheet" type="text/css"
-	href="../public/stylesheet/realestate.css" />
+	href="${pageContext.request.contextPath}/stylesheet/realestate.css" />
 </head>
 <body>
 	<section class="body1">
 		<!--Header-->
 		<div id="navbar">
 			<div class="logo">
-				<a><img src="../public/images/PageLogo/logo_main.png"
+				<a><img src="${pageContext.request.contextPath}/images/PageLogo/logo_main.png"
 					width="inherit;" /></a>
 			</div>
 			<div>
@@ -41,7 +41,7 @@
 		<!--Main-->
 		<div id="mainpage">
 			<div class="findhome">
-				<img src="../public/images/lancastereden.jpg" class="imgfinding" />
+				<img src="${pageContext.request.contextPath}/images/lancastereden.jpg" class="imgfinding" />
 				<div class="text">
 					<h2>
 						<strong>Reimagine home</strong>
@@ -62,7 +62,7 @@
 			<hr width="15%" text-align="center" color="red " />
 			<div class="part">
 				<div class="whitespace">
-					<img src="../public/images/pictures/buyhome.png" class="buyhomeimg" />
+					<img src="${pageContext.request.contextPath}/images/pictures/buyhome.png" class="buyhomeimg" />
 					<p class="buyhometext">Buy a Home</p>
 					<p class="buyhometext1">Find your place with an immersive photo
 						experience and the most listings, including things you won’t
@@ -72,7 +72,7 @@
 					</button>
 				</div>
 				<div class="whitespace1">
-					<img src="../public/images/pictures/sellhome.png"
+					<img src="${pageContext.request.contextPath}/images/pictures/sellhome.png"
 						class="buyhomeimg" />
 					<p class="buyhometext">Sell a Home</p>
 					<p class="buyhometext1">Whether you sell with new Minutes
@@ -83,7 +83,7 @@
 					</button>
 				</div>
 				<div class="whitespace2">
-					<img src="../public/images/pictures/renthome.png"
+					<img src="${pageContext.request.contextPath}/images/pictures/renthome.png"
 						class="buyhomeimg" />
 					<p class="buyhometext">Rent a Home</p>
 					<p class="buyhometext1">We’re creating a seamless online
@@ -100,7 +100,7 @@
 			<div class="inner">
 				<div class="logofooter">
 					<a href="./homepage.html" class="footerlogo" id="logofooters">
-						<img src="../public/images/PageLogo/logo_main.png"
+						<img src="${pageContext.request.contextPath}/images/PageLogo/logo_main.png"
 						class="footerimage" />
 					</a>
 				</div>

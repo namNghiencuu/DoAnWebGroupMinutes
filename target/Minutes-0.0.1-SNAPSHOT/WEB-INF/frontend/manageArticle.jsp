@@ -4,13 +4,13 @@
 <title>Quản lý bài viết</title>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="stylesheet"
-	href="../public/stylesheet/admindashboard/main.css" />
+	href="${pageContext.request.contextPath}/stylesheet/admindashboard/main.css" />
 <link rel="stylesheet"
-	href="../public/stylesheet/admindashboard/navbar.css" />
+	href="${pageContext.request.contextPath}/stylesheet/admindashboard/navbar.css" />
 <link rel="stylesheet"
-	href="../public/stylesheet/admindashboard/manageArticle.css" />
+	href="${pageContext.request.contextPath}/stylesheet/admindashboard/manageArticle.css" />
 <link rel="stylesheet" type="text/css"
-	href="../public/lib/datatables/css/jquery.dataTables.min.css" />
+	href="${pageContext.request.contextPath}/lib/datatables/css/jquery.dataTables.min.css" />
 </head>
 
 <body style="background-color: rgba(128, 128, 128, 0.048);">
@@ -146,9 +146,9 @@
 	</div>
 
 	<script type="text/javascript"
-		src="../public/lib/jquery/jquery-1.7.1.min.js"></script>
+		src="${pageContext.request.contextPath}/lib/jquery/jquery-1.7.1.min.js"></script>
 	<script type="text/javascript"
-		src="../public/lib/datatables/js/jquery.dataTables.min.js"></script>
+		src="${pageContext.request.contextPath}/lib/datatables/js/jquery.dataTables.min.js"></script>
 	<script>
 		$(document).ready(function() {
 			$("#table").DataTable({

@@ -12,9 +12,8 @@ public class Team {
 	public Team() {
 	}
 
-	public Team(int id, String name, ArrayList<Integer> league, ArrayList<Integer> players, ArrayList<String> tags) {
+	public Team(String name, ArrayList<Integer> league, ArrayList<Integer> players, ArrayList<String> tags) {
 		super();
-		this.id = id;
 		this.name = name;
 		this.league = league;
 		this.players = players;
@@ -26,11 +25,7 @@ public class Team {
 	public int getId() {
 		return id;
 	}
-
-	public void setId(int id) {
-		this.id = id;
-	}
-
+	
 	public String getName() {
 		return name;
 	}

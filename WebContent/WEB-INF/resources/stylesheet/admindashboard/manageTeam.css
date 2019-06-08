@@ -1,0 +1,28 @@
+}
+.btn1:hover {
+  border: 0.5px solid white;
+}
+.gotopbtn {
+  grid-column: 4;
+  display: block;
+  position: relative;
+  height: 50px;
+  margin-top: -160px;
+  float: right;
+  background: black;
+  bottom: 40px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+}
+.gotopbtn:hover {
+  color: white;
+  text-decoration: none;
+  background-color: #ffa07a;
+}
+.backtop {
+  padding-left: 3px;
+  padding-right: 3px;
+  text-decoration: none;
+}

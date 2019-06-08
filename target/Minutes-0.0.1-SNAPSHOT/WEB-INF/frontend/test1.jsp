@@ -2,8 +2,8 @@
 <html>
     <head>
         <title>Talented young stars in Bundesliga | Minutes.com</title>
-        <link rel="shortcut icon" href="../public/images/PageLogo/logo.png">
-        <link rel="stylesheet" type="text/css" href="../public/stylesheet/test1.css" />
+        <link rel="shortcut icon" href="${pageContext.request.contextPath}/images/PageLogo/logo.png">
+        <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/stylesheet/test1.css" />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
           integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
         <meta charset="utf-8" />
@@ -13,13 +13,13 @@
         <section class="body1">
         <div id="navbar">
             <div class="logo">
-              <a><img src="../public/images/PageLogo/MinutesIcon.png" width="inherit;" /></a>
+              <a><img src="${pageContext.request.contextPath}/images/PageLogo/MinutesIcon.png" width="inherit;" /></a>
             </div>
             <div><a href="./homepage.html">News</a></div>
             <div><a href="./transfer.html">Live Scores</a></div>
             <div><a href="Leagues&Cups">Leagues & Cups</a></div>
             <div><a href="./test1.html">Teams</a></div>
-            <div><img src="../public/images/English icon.png" width="25px;" /> <a class="abc" href="english">English</a></div>
+            <div><img src="${pageContext.request.contextPath}/images/English icon.png" width="25px;" /> <a class="abc" href="english">English</a></div>
         </div>
         <!---main-->
         <div id="main">
@@ -29,7 +29,7 @@
           <div class="whitespace">
               <div class="card middle grid1">
                   <div class="front">
-                      <img src="../public/images/FCLogo/mulogo.png" alt=""/>
+                      <img src="${pageContext.request.contextPath}/images/FCLogo/mulogo.png" alt=""/>
                   </div>
                   <div class="back">
                       <div class="back-content middle">
@@ -45,7 +45,7 @@
               </div>
               <div class="card middle grid2">
                   <div class="front">
-                      <img src="../public/images/FCLogo/chelsealogo.png" alt=""/>
+                      <img src="${pageContext.request.contextPath}/images/FCLogo/chelsealogo.png" alt=""/>
                   </div>
                   <div class="back">
                       <div class="back-content middle">
@@ -61,7 +61,7 @@
               </div>
               <div class="card middle grid3">
                   <div class="front">
-                      <img src="../public/images/FCLogo/arsenallogo.png" alt=""/>
+                      <img src="${pageContext.request.contextPath}/images/FCLogo/arsenallogo.png" alt=""/>
                   </div>
                   <div class="back">
                       <div class="back-content middle">
@@ -77,7 +77,7 @@
               </div>
               <div class="card middle grid4">
                   <div class="front">
-                      <img src="../public/images/FCLogo/liverpoollogo.png" alt=""/>
+                      <img src="${pageContext.request.contextPath}/images/FCLogo/liverpoollogo.png" alt=""/>
                   </div>
                   <div class="back">
                       <div class="back-content middle">
@@ -98,7 +98,7 @@
             <div class="inner">
               <div class="logofooter">
                 <a href="./homepage.html" class="footerlogo" id="logofooters">
-                  <img src="../public/images/PageLogo/MinutesIcon.png" class="footerimage" />
+                  <img src="${pageContext.request.contextPath}/images/PageLogo/MinutesIcon.png" class="footerimage" />
                 </a>
               </div>
               <div id="footermenu" class="footermenu" role="navigation">

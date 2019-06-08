@@ -1,6 +1,7 @@
 package minutes.com.entities;
 
 public class Message {
+
 	private int id;
 	private String senderName;
 	private String email;
@@ -9,22 +10,15 @@ public class Message {
 	public Message() {
 	}
 
-	
-	public Message(int id, String senderName, String email, String content) {
+	public Message(String senderName, String email, String content) {
 		super();
-		this.id = id;
 		this.senderName = senderName;
 		this.email = email;
 		this.content = content;
 	}
 
-
 	public int getId() {
 		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
 	}
 
 	public String getSenderName() {
@@ -51,5 +45,4 @@ public class Message {
 		this.content = content;
 	};
 
-	
 }

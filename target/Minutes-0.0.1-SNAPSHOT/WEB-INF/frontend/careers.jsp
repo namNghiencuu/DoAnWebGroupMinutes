@@ -3,8 +3,8 @@
 
 <head>
     <title> Football News, Live Scores, Results & Transfer | Minutes.com </title>
-    <link rel="shortcut icon" href="../public/images/PageLogo/logo.png">
-    <link rel="stylesheet" type="text/css" href="../public/stylesheet/careers.css" />
+    <link rel="shortcut icon" href="${pageContext.request.contextPath}/images/PageLogo/logo.png">
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/stylesheet/careers.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="https://bit.ly/2Jc8yDJ">
@@ -19,7 +19,7 @@
         <!---header-->
         <div id="navbar">
             <div class="logo">
-                <a><img src="../public/images/PageLogo/MinutesIcon.png" width="inherit;" /></a>
+                <a><img src="${pageContext.request.contextPath}/images/PageLogo/MinutesIcon.png" width="inherit;" /></a>
             </div>
             <div><a href="./homepage.html">News</a>
             </div>
@@ -33,14 +33,14 @@
                     <i class="fas fa-search"></i>
                 </a>
             </div>
-            <div><img src="../public/images/English icon.png" width="25px;" /> <a class="abc" href="english">English</a>
+            <div><img src="${pageContext.request.contextPath}/images/English icon.png" width="25px;" /> <a class="abc" href="english">English</a>
             </div>
         </div>
         <!--Main-->
         <div class="main">
             <div class="bg">
                 <div class="bgimg">
-                    <img src="../public/images/pictures/job.jpg" class="img1">
+                    <img src="${pageContext.request.contextPath}/images/pictures/job.jpg" class="img1">
                     <div class="text">
                         <h2>
                             JOB
@@ -73,7 +73,7 @@
             <div class="inner">
                 <div class="logofooter">
                     <a href="./homepage.html" class="footerlogo" id="logofooters">
-                        <img src="../public/images/PageLogo/MinutesIcon.png" class="footerimage" />
+                        <img src="${pageContext.request.contextPath}/images/PageLogo/MinutesIcon.png" class="footerimage" />
                     </a>
                 </div>
                 <div id="footermenu" class="footermenu" role="navigation">

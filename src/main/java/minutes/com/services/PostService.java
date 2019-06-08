@@ -12,26 +12,26 @@ import minutes.com.entities.Post;
 @Transactional
 public class PostService {
 	@Autowired
-	  private CustomerDAO customerDAO;
+	  private PostDAO postDAO;
 	  
-	  public List<Customer> findAll() {
-	    return customerDAO.findAll();
+	  public List<Post> findAll() {
+	    return postDAO.findAll();
 	  }
-	  public Customer findById(int id) {
-	    return customerDAO.findById(id);
+	  public Post findById(int id) {
+	    return postDAO.findById(id);
 	  }
 	  
-	  public void save(Customer customer){
+	  public void save(Post post){
 	    // validate business
-	    customerDAO.save(customer);
+	    postDAO.save(post);
 	  }
-	  public void update(Customer customer){
+	  public void update(Post post){
 	    // validate business
-	    customerDAO.update(customer);
+	    postDAO.update(post);
 	  }
 	  
 	  public void delete(int id){
 	    // validate business
-	    customerDAO.delete(id);
+	    postDAO.delete(id);
 	  }
 }

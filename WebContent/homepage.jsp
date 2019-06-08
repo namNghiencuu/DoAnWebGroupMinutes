@@ -5,8 +5,8 @@
   <title> Football News, Live Scores, Results & Transfer | Minutes.com </title>
   <link rel="shortcut icon" href="${pageContext.request.contextPath}/images/PageLogo/logo.png">
   <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/stylesheet/client/homepage.css" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css"
+	href="${pageContext.request.contextPath}/lib/fontawesome-free-5.8.1-web/css/all.css">
   <link rel="stylesheet" href="https://bit.ly/2Jc8yDJ">
   <link rel="stylesheet" href="https://bit.ly/2IptVj3">
   <link rel="preload" href="/rebuild-beta-assets/fonts/goal-icons.woff2?v=3.96.0" as="font" type="font/woff2"

@@ -8,13 +8,13 @@
 <meta charset="ISO-8859-1">
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="stylesheet" type="text/css"
-	href="/${pageContext.request.contextPath}/stylesheet/admindashboard/admindashboard.css">
+	href="${pageContext.request.contextPath}/stylesheet/admindashboard/admindashboard.css">
 <link rel="stylesheet" type="text/css"
-	href="/MinutesServer/stylesheet/admindashboard/main.css">
+	href="${pageContext.request.contextPath}/stylesheet/admindashboard/main.css">
 <link rel="stylesheet" type="text/css"
-	href="/MinutesServer/stylesheet/admindashboard/navbar.css">
+	href="${pageContext.request.contextPath}/stylesheet/admindashboard/navbar.css">
 <link rel="stylesheet" type="text/css"
-	href="/MinutesServer/lib/fontawesome-free-5.8.1-web/css/all.css">
+	href="${pageContext.request.contextPath}/lib/fontawesome-free-5.8.1-web/css/all.css">
 <script
 	src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
 </head>
@@ -98,7 +98,7 @@
 				</div>
 				<div class="assignTask">
 					<div class="circle circle-s avatar">
-						<img src="/MinutesServer/images/avatar.jpg" alt="user">
+						<img src="${pageContext.request.contextPath}/images/avatar.jpg" alt="user">
 					</div>
 					<div class="name">
 						Phan Hoang Nam <span style="color: gray;"> | 6h30</span>
@@ -108,7 +108,7 @@
 				</div>
 				<div class="assignTask">
 					<div class="circle circle-s avatar">
-						<img src="/MinutesServer/images/avatar.jpg" alt="user">
+						<img src="${pageContext.request.contextPath}/images/avatar.jpg" alt="user">
 					</div>
 					<div class="name">
 						Phan Hoang Nam <span style="color: gray;"> | 6h30</span>
@@ -120,7 +120,7 @@
 				</div>
 				<div class="assignTask">
 					<div class="circle circle-s avatar">
-						<img src="/MinutesServer/images/avatar.jpg" alt="user">
+						<img src="${pageContext.request.contextPath}/images/avatar.jpg" alt="user">
 					</div>
 					<div class="name">
 						Phan Hoang Nam <span style="color: gray;"> | 6h30</span>
@@ -130,7 +130,7 @@
 				</div>
 				<div class="assignTask">
 					<div class="circle circle-s avatar">
-						<img src="/MinutesServer/images/avatar.jpg" alt="user">
+						<img src="${pageContext.request.contextPath}/images/avatar.jpg" alt="user">
 					</div>
 					<div class="name">
 						Phan Hoang Nam <span style="color: gray;"> | 6h30</span>
@@ -153,29 +153,13 @@
 					<label class="detail">Stuff to do</label>
 					<div class="responsiblePeople">
 						<div class="circle circle-s avatar">
-							<img src="/MinutesServer/images/avatar.jpg" alt="user">
+							<img src="${pageContext.request.contextPath}/images/avatar.jpg" alt="user">
 						</div>
 						<div class="circle circle-s avatar">
-							<img src="/MinutesServer/images/avatar.jpg" alt="user">
+							<img src="${pageContext.request.contextPath}/images/avatar.jpg" alt="user">
 						</div>
 						<div class="circle circle-s avatar">
-							<img src="/MinutesServer/images/avatar.jpg" alt="user">
-						</div>
-					</div>
-					<div class="time">time do it</div>
-				</div>
-				<div class="todo-item">
-					<input type="checkbox" class="checkbox" name="a" value="false">
-					<label class="detail">Stuff to do</label>
-					<div class="responsiblePeople">
-						<div class="circle circle-s avatar">
-							<img src="/MinutesServer/images/avatar.jpg" alt="user">
-						</div>
-						<div class="circle circle-s avatar">
-							<img src="/MinutesServer/images/avatar.jpg" alt="user">
-						</div>
-						<div class="circle circle-s avatar">
-							<img src="/MinutesServer/images/avatar.jpg" alt="user">
+							<img src="${pageContext.request.contextPath}/images/avatar.jpg" alt="user">
 						</div>
 					</div>
 					<div class="time">time do it</div>
@@ -185,13 +169,29 @@
 					<label class="detail">Stuff to do</label>
 					<div class="responsiblePeople">
 						<div class="circle circle-s avatar">
-							<img src="/MinutesServer/images/avatar.jpg" alt="user">
+							<img src="${pageContext.request.contextPath}/images/avatar.jpg" alt="user">
 						</div>
 						<div class="circle circle-s avatar">
-							<img src="/MinutesServer/images/avatar.jpg" alt="user">
+							<img src="${pageContext.request.contextPath}/images/avatar.jpg" alt="user">
 						</div>
 						<div class="circle circle-s avatar">
-							<img src="/MinutesServer/images/avatar.jpg" alt="user">
+							<img src="${pageContext.request.contextPath}/images/avatar.jpg" alt="user">
+						</div>
+					</div>
+					<div class="time">time do it</div>
+				</div>
+				<div class="todo-item">
+					<input type="checkbox" class="checkbox" name="a" value="false">
+					<label class="detail">Stuff to do</label>
+					<div class="responsiblePeople">
+						<div class="circle circle-s avatar">
+							<img src="${pageContext.request.contextPath}/images/avatar.jpg" alt="user">
+						</div>
+						<div class="circle circle-s avatar">
+							<img src="${pageContext.request.contextPath}/images/avatar.jpg" alt="user">
+						</div>
+						<div class="circle circle-s avatar">
+							<img src="${pageContext.request.contextPath}/images/avatar.jpg" alt="user">
 						</div>
 					</div>
 					<div class="time">time do it</div>

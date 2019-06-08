@@ -1,9 +1,7 @@
 package minutes.com.mappers;
 
-import java.sql.Date;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
 
 import org.springframework.jdbc.core.RowMapper;
 
@@ -19,9 +17,7 @@ public class PostMapper implements RowMapper<Post> {
 	    post.setPostType(rs.getString("postType"));
 	    post.setPostTime(rs.getDate("postTime"));
 	    post.setUpdateTime(rs.getDate("updateTime"));
-	    post.setImageLink(rs.getArray("imageLink"));
-	    post.setSocialLink(rs.getArray("socialLink"));
+	    post.setTags(rs.getArray("tags"));
 	    return post;
 	  }
-	
 }

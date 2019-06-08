@@ -1,10 +1,11 @@
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <!DOCTYPE html>
 <html>
 
 <head>
     <title> Football News, Live Scores, Results & Transfer | Minutes.com </title>
-    <link rel="shortcut icon" href="../public/images/PageLogo/logo.png">
-    <link rel="stylesheet" type="text/css" href="../public/stylesheet/contact-us.css" />
+    <link rel="shortcut icon" href="${pageContext.request.contextPath}/images/PageLogo/logo.png">
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/stylesheet/client/contact-us.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="https://bit.ly/2Jc8yDJ">
@@ -16,12 +17,12 @@
     <section class="body1">
         <div id="navbar">
             <div class="logo">
-                <a><img src="../public/images/PageLogo/MinutesIcon.png" width="inherit;" /></a>
+                <a><img src="${pageContext.request.contextPath}/images/PageLogo/MinutesIcon.png" width="inherit;" /></a>
             </div>
             <div><a href="./homepage.html">News</a>
             </div>
             <div><a href="./transfer.html">Live Scores</a></div>
-            <div><a href="Leagues&Cups">Leagues & Cups</a></div>
+            <div><a href="./Leagues&Cups">Leagues & Cups</a></div>
             <div><a href="./test1.html">Teams</a></div>
             <div class="search-box">
                 <input class="search-txt" type="text" name="" placeholder="Type to search">
@@ -29,7 +30,7 @@
                     <i class="fas fa-search"></i>
                 </a>
             </div>
-            <div><img src="../public/images/English icon.png" width="25px;" /> <a class="abc"
+            <div><img src="${pageContext.request.contextPath}/images/English icon.png" width="25px;" /> <a class="abc"
                     href="english">&emsp;English</a>
             </div>
         </div>
@@ -41,13 +42,12 @@
                 <h3>All The Best You Need</h3>
             </div>
             <div class="contact-fomr">
-                <form id="contact-fomr" method="POST" action="">
-                    <input name="name" type="text" class="form-control" placeholder="Your Name" required><br>
-                    <input name="email" type="email" class="form-control" placeholder="Your Email" required><br>
-                    <textarea name="message" class="form-control" placeholder="Message" rows="3"
-                        required></textarea><br>
-                    <input type="submit" class="form-control submit" value="Send Message">
-                </form>
+                <form:form id="contact-form" method="POST" action="addMessage" modelAttribute="message">
+                    <form:input path="name" type="text" class="form-control" placeholder="Your Name"/><br>
+                    <form:input path="email" type="email" class="form-control" placeholder="Your Email"/><br>
+                    <form:textarea path="message" class="form-control" placeholder="Message" rows="3"/><br>
+                    <input type="submit" class="form-control submit" value="Submit"/>
+                </form:form>
             </div>
         </div>
         <!------>
@@ -56,7 +56,7 @@
                 <div class="logofooter">
                     <a href="file:///C:/Users/Nguyen%20Huy%20Cuong/Downloads/Documents/Web%20App%20Dev/DoAnWebGroupMinutes/homepage.html"
                         class="footerlogo" id="logofooters">
-                        <img src="../public/images/PageLogo/MinutesIcon.png" class="footerimage" />
+                        <img src="${pageContext.request.contextPath}/images/PageLogo/MinutesIcon.png" class="footerimage" />
                     </a>
                 </div>
                 <div id="footermenu" class="footermenu" role="navigation">

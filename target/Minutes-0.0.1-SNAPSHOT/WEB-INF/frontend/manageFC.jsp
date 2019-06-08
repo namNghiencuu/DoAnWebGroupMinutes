@@ -5,11 +5,11 @@
 <title>Quản lý đội bóng</title>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="stylesheet"
-	href="../public/stylesheet/admindashboard/main.css" />
+	href="${pageContext.request.contextPath}/stylesheet/admindashboard/main.css" />
 <link rel="stylesheet"
-	href="../public/stylesheet/admindashboard/navbar.css" />
+	href="${pageContext.request.contextPath}/stylesheet/admindashboard/navbar.css" />
 <link rel="stylesheet"
-	href="../public/stylesheet/admindashboard/manageFC.css" />
+	href="${pageContext.request.contextPath}/stylesheet/admindashboard/manageFC.css" />
 <link rel="stylesheet"
 	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
 	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
@@ -36,55 +36,55 @@
 	<div id="layout">
 		<div class="item">
 			<div class="FCLogo">
-				<img class="" src="../public/images/FCLogo/Arsenal_Logo.png" />
+				<img class="" src="${pageContext.request.contextPath}/images/FCLogo/Arsenal_Logo.png" />
 			</div>
 			<div class="FCName">Arsenal</div>
 		</div>
 		<div class="item">
 			<div class="FCLogo">
-				<img class="" src="../public/images/FCLogo/Barcelona_Logo.png" />
+				<img class="" src="${pageContext.request.contextPath}/images/FCLogo/Barcelona_Logo.png" />
 			</div>
 			<div class="FCName">Barcelona</div>
 		</div>
 		<div class="item">
 			<div class="FCLogo">
-				<img class="" src="../public/images/FCLogo/Chelsea_Logo.png" />
+				<img class="" src="${pageContext.request.contextPath}/images/FCLogo/Chelsea_Logo.png" />
 			</div>
 			<div class="FCName">Chelsea</div>
 		</div>
 		<div class="item">
 			<div class="FCLogo">
-				<img class="" src="../public/images/FCLogo/Liverpool_Logo.png" />
+				<img class="" src="${pageContext.request.contextPath}/images/FCLogo/Liverpool_Logo.png" />
 			</div>
 			<div class="FCName">Liverpool</div>
 		</div>
 		<div class="item">
 			<div class="FCLogo">
-				<img class="" src="../public/images/FCLogo/MC_Logo.png" />
+				<img class="" src="${pageContext.request.contextPath}/images/FCLogo/MC_Logo.png" />
 			</div>
 			<div class="FCName">Manchester City</div>
 		</div>
 		<div class="item">
 			<div class="FCLogo">
-				<img class="" src="../public/images/FCLogo/MU_Logo.jpg" />
+				<img class="" src="${pageContext.request.contextPath}/images/FCLogo/MU_Logo.jpg" />
 			</div>
 			<div class="FCName">Manchester United</div>
 		</div>
 		<div class="item">
 			<div class="FCLogo">
-				<img class="" src="../public/images/FCLogo/Real madrid_Logo.png" />
+				<img class="" src="${pageContext.request.contextPath}/images/FCLogo/Real madrid_Logo.png" />
 			</div>
 			<div class="FCName">Real Madrid</div>
 		</div>
 		<div class="item">
 			<div class="FCLogo">
-				<img class="" src="../public/images/FCLogo/Vietnam_Logo.png" />
+				<img class="" src="${pageContext.request.contextPath}/images/FCLogo/Vietnam_Logo.png" />
 			</div>
 			<div class="FCName">Viet Nam</div>
 		</div>
 		<div class="item">
 			<div class="FCLogo">
-				<img class="" src="../public/images/FCLogo/Vietnam_Logo.png" />
+				<img class="" src="${pageContext.request.contextPath}/images/FCLogo/Vietnam_Logo.png" />
 			</div>
 			<div class="FCName">Viet Nam</div>
 		</div>

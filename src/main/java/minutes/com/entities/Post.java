@@ -13,6 +13,7 @@ public class Post {
 	private Date updateTime;
 	private ArrayList<String> imageLink = new ArrayList<String>();
 	private ArrayList<String> socialLink = new ArrayList<String>();
+	private ArrayList<Integer> tags = new ArrayList<Integer>();
 
 	public Post() {
 	};
@@ -102,5 +103,11 @@ public class Post {
 	public void setSocialLink(ArrayList<String> SocialLink) {
 		socialLink = SocialLink;
 	}
+	public ArrayList<Integer> getTags() {
+		return tags;
+	}
 
+	public void setTags(ArrayList<Integer> tags) {
+		this.tags = tags;
+	}
 }
