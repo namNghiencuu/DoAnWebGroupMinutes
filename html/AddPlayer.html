@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AddPlayer</title>
+    <link rel="shortcut icon" href="../public/images/PageLogo/logo.png" />
+    <link rel="stylesheet" href="../public/stylesheet/AddPlayer.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <form>
+      <div class="container">
+        <div class="form-container sign-in-container">
+          <form action="#">
+            <h1>Edit Player</h1>
+            <input
+              type="number"
+              id="teamid"
+              placeholder="TeamID"
+              name="teamID"
+            />
+            <select class="select">
+              <option value="Gk">GoalKeepers</option>
+              <option value="Cb">Defenders</option>
+              <option value="Mid">Midfielders</option>
+              <option value="St">Fowards</option>
+            </select>
+            <input
+              type="text"
+              id="playername"
+              placeholder="FirstName"
+              name="lirstName"
+            />
+            <input
+              type="text"
+              id="playername"
+              placeholder="LastName"
+              name="lastName"
+            />
+            <input type="number" id="date" placeholder="Age" name="age" />
+            <input
+              type="number"
+              id="number"
+              placeholder="ShirtNumber"
+              name="shirtNumber"
+            />
+            <button type="button" onclick="getinfo()">Save</button>
+          </form>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

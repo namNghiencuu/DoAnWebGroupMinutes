@@ -269,6 +269,11 @@ a {
   height: 50vh;
   width: 100%;
 }
+.addplayer {
+  border: 5px thin blue;
+  border-radius: 20px;
+  color: red;
+}
 .preft {
   display: grid;
   grid-template-columns: 50% 50%;
