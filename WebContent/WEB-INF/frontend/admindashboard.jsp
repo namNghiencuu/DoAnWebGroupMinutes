@@ -8,7 +8,7 @@
 <meta charset="ISO-8859-1">
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="stylesheet" type="text/css"
-	href="${pageContext.request.contextPath}/stylesheet/admindashboard/admindashboard.css">
+	href="${pageContext.request.contextPath}/stylesheet/admindashboard/admindb.css">
 <link rel="stylesheet" type="text/css"
 	href="${pageContext.request.contextPath}/stylesheet/admindashboard/main.css">
 <link rel="stylesheet" type="text/css"
@@ -46,7 +46,7 @@
 				<h1>3000000</h1>
 			</div>
 			<div class="result-item bg-red">
-				<i class="fas fa-buffer"></i>
+				<i class="fas fa-business-time"></i>
 				<h3>#Revenue</h3>
 				<h1>3000000</h1>
 			</div>
@@ -106,38 +106,6 @@
 					<div class="dosomething">Joined task abc with abc, xyz, lmc</div>
 					<div class="detail">Joined task abc with abc, xyz, lmc</div>
 				</div>
-				<div class="assignTask">
-					<div class="circle circle-s avatar">
-						<img src="${pageContext.request.contextPath}/images/avatar.jpg" alt="user">
-					</div>
-					<div class="name">
-						Phan Hoang Nam <span style="color: gray;"> | 6h30</span>
-					</div>
-					<div class="dosomething">Write an article name abcxyz</div>
-					<div class="detail">
-						Link to the article <span><a href="#">abcxyz</a></span>
-					</div>
-				</div>
-				<div class="assignTask">
-					<div class="circle circle-s avatar">
-						<img src="${pageContext.request.contextPath}/images/avatar.jpg" alt="user">
-					</div>
-					<div class="name">
-						Phan Hoang Nam <span style="color: gray;"> | 6h30</span>
-					</div>
-					<div class="dosomething">Joined task abc with abc, xyz, lmc</div>
-					<div class="detail">Joined task abc with abc, xyz, lmc</div>
-				</div>
-				<div class="assignTask">
-					<div class="circle circle-s avatar">
-						<img src="${pageContext.request.contextPath}/images/avatar.jpg" alt="user">
-					</div>
-					<div class="name">
-						Phan Hoang Nam <span style="color: gray;"> | 6h30</span>
-					</div>
-					<div class="dosomething">Joined task abc with abc, xyz, lmc</div>
-					<div class="detail">Joined task abc with abc, xyz, lmc</div>
-				</div>
 				<div class="doneTask"></div>
 			</div>
 			<div id="todo">
@@ -147,38 +115,6 @@
 					<button id="addTodo__button"
 						class="btn circle circle-s bg-blue flex-item-left shape-center">
 						&plus;</button>
-				</div>
-				<div class="todo-item">
-					<input type="checkbox" class="checkbox" name="a" value="false">
-					<label class="detail">Stuff to do</label>
-					<div class="responsiblePeople">
-						<div class="circle circle-s avatar">
-							<img src="${pageContext.request.contextPath}/images/avatar.jpg" alt="user">
-						</div>
-						<div class="circle circle-s avatar">
-							<img src="${pageContext.request.contextPath}/images/avatar.jpg" alt="user">
-						</div>
-						<div class="circle circle-s avatar">
-							<img src="${pageContext.request.contextPath}/images/avatar.jpg" alt="user">
-						</div>
-					</div>
-					<div class="time">time do it</div>
-				</div>
-				<div class="todo-item">
-					<input type="checkbox" class="checkbox" name="a" value="false">
-					<label class="detail">Stuff to do</label>
-					<div class="responsiblePeople">
-						<div class="circle circle-s avatar">
-							<img src="${pageContext.request.contextPath}/images/avatar.jpg" alt="user">
-						</div>
-						<div class="circle circle-s avatar">
-							<img src="${pageContext.request.contextPath}/images/avatar.jpg" alt="user">
-						</div>
-						<div class="circle circle-s avatar">
-							<img src="${pageContext.request.contextPath}/images/avatar.jpg" alt="user">
-						</div>
-					</div>
-					<div class="time">time do it</div>
 				</div>
 				<div class="todo-item">
 					<input type="checkbox" class="checkbox" name="a" value="false">
@@ -289,6 +225,8 @@
 			}
 		}
 	</script>
+	<script
+		src="${pageContext.request.contextPath}/lib/fontawesome-free-5.8.1-web/js/fontawesomeKit.js"></script>
 </body>
 
 </html>

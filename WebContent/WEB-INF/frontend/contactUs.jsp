@@ -56,7 +56,7 @@
 		<div class="contactBody">
 			<div class="contact-title">
 				<h1>SAY HELLO</h1>
-				<h3>All The Best You Need</h3>
+				<h3>Contact Us</h3>
 			</div>
 			<div class="contact-form">
 				<form action="/Minutes/saveMessage" id="contact-form" method="POST" modelAttribute="Message" >

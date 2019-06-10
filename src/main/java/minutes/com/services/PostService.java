@@ -17,6 +17,9 @@ public class PostService {
 	  public List<Post> findAll() {
 	    return postDAO.findAll();
 	  }
+	  public List<Post> findTop(int number) {
+		    return postDAO.findTop(number);
+		  }
 	  public Post findById(int id) {
 	    return postDAO.findById(id);
 	  }

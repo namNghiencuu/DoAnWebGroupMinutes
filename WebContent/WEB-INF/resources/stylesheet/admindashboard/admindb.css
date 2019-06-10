@@ -24,7 +24,7 @@
 .result-item i {
   grid-column: 1;
   grid-row: 1 / span 2;
-  font-size: 50pt;
+  font-size: 45pt;
   place-self: center;
 }
 

@@ -16,7 +16,7 @@ public class MessageController {
 	@Autowired
 	private MessageService messageService;
 
-	@RequestMapping(value = { "/", "/message-list" }, method = RequestMethod.GET)
+	@RequestMapping(value = {"/message-list" }, method = RequestMethod.GET)
 	public String listMessage(Model model) {
 		model.addAttribute("listMessage", messageService.findAll());
 		return "message-list";

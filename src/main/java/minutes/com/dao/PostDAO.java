@@ -1,7 +1,5 @@
 package minutes.com.dao;
 
-import java.sql.Date;
-import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,8 +16,8 @@ public class PostDAO {
 	  @Autowired
 	  private JdbcTemplate jdbcTemplate;
 	  public void save(Post post) {
-	    String sql = "INSERT INTO post (id, title, content, author, postType, PostTime, UpdateTime, ImageLink, SocialLink, tags) VALUES (?, ?,?, ?,?, ?,?, ?,?, ?)";
-	    jdbcTemplate.update(sql, post.getId(), post.getTitle(), post.getContent(), post.getAuthor(), post.getPostType(), post.getPostTime(), post.getUpdateTime(), post.getImageLink(), post.getSocialLink(),post.getTags());
+	    String sql = "INSERT INTO post (title, content, author, postType, postTime, updateTime, ImageLink, SocialLink, tags) VALUES (?,?, ?,?, ?,?, ?,?, ?)";
+	    jdbcTemplate.update(sql, post.getTitle(), post.getContent(), post.getAuthor(), post.getPostType(), post.getPostTime(), post.getUpdateTime(), post.getImageLink(), post.getSocialLink(),post.getTags());
 	  }
 	  public void delete(int id) {
 	    String sql = "DELETE FROM post WHERE id = " + id;
@@ -27,7 +25,7 @@ public class PostDAO {
 	  }
 	  
 	  public void update(Post post) {
-	    String sql = "UPDATE customer SET title = ?, content = ?, postType = ?, UpdateTime = ?, ImageLink = ?, SocialLink = ? WHERE id = ? ";
+	    String sql = "UPDATE post SET title = ?, content = ?, postType = ?, UpdateTime = ?, ImageLink = ?, SocialLink = ? WHERE id = ? ";
 	    jdbcTemplate.update(sql, post.getTitle(), post.getContent(), post.getPostType(), post.getUpdateTime(),  post.getImageLink(), post.getSocialLink(), post.getId());
 	  }
 	  public Post findById(int id) {
@@ -38,4 +36,8 @@ public class PostDAO {
 	    String sql = "SELECT * FROM post";
 	    return jdbcTemplate.query(sql, new PostMapper());
 	  }
+	  public List<Post> findTop(int number) {
+		    String sql = "SELECT * FROM post LIMIT 1, " + number;
+		    return jdbcTemplate.query(sql, new PostMapper());
+		  }
 }

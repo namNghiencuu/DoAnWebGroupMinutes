@@ -6,18 +6,18 @@ public class Player {
 	private int age;
 	private int shirtNumber;
 	private String position;
-	private int Club;
+	private int teamId;
 	
 	public Player() {
 	}
 
-	public Player(int id, String name, int age, int shirtNumber, String position) {
+	public Player(String name, int age, int shirtNumber, String position, int teamId) {
 		super();
-		this.id = id;
 		this.name = name;
 		this.age = age;
 		this.shirtNumber = shirtNumber;
 		this.position = position;
+		this.teamId = teamId;
 	}
 
 
@@ -62,13 +62,12 @@ public class Player {
 		this.position = position;
 	}
 
-	public int getClub() {
-		return Club;
+	public int getTeamId() {
+		return teamId;
 	}
 
-	public void setClub(int club) {
-		Club = club;
-	};
+	public void setTeamId(int teamId) {
+		this.teamId = teamId;
+	}
 	
-
 }

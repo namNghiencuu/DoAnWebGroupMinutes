@@ -6,23 +6,17 @@ import java.sql.SQLException;
 
 import org.springframework.jdbc.core.RowMapper;
 
-import minutes.com.entities.Post;
-import minutes.com.services.ArrayToArrayList;
+import minutes.com.entities.Player;
 
-public class PlayerMapper implements RowMapper<Post> {
+public class PlayerMapper implements RowMapper<Player> {
 	
-	public Post mapRow(ResultSet rs, int rowNum) throws SQLException {
-		ArrayToArrayList atal = new ArrayToArrayList();
-	    Post post = new Post();
-	    post.setTitle(rs.getString("title"));
-	    post.setContent(rs.getString("content"));
-	    post.setAuthor(rs.getInt("author"));
-	    post.setPostType(rs.getString("postType"));
-	    post.setPostTime(rs.getDate("postTime"));
-	    post.setUpdateTime(rs.getDate("updateTime"));
-	    post.setTags(atal.arrayToIntArrayList(rs.getArray("tags")));
-	    post.setImageLink(atal.arrayToStringArrayList(rs.getArray("imageLink")));
-	    post.setSocialLink(atal.arrayToStringArrayList(rs.getArray("socialLink")));
-	    return post;
+	public Player mapRow(ResultSet rs, int rowNum) throws SQLException {
+	    Player player = new Player();
+	    player.setName(rs.getString("name"));
+	    player.setAge(rs.getInt("name"));
+	    player.setPosition(rs.getString("position"));
+	    player.setShirtNumber(rs.getInt("shirtNumber"));
+	    player.setTeamId(rs.getInt("teamId"));
+	    return player;
 	  }
 }
