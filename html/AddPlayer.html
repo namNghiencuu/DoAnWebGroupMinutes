@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>AddPlayer</title>
+    <title>Football News, Live Scores, Results & Transfer | Minutes.com</title>
     <link rel="shortcut icon" href="../public/images/PageLogo/logo.png" />
-    <link rel="stylesheet" href="../public/stylesheet/AddPlayer.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../public/stylesheet/AddPlayer.css"
+    />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -12,46 +16,19 @@
     />
   </head>
   <body>
-    <form>
-      <div class="container">
-        <div class="form-container sign-in-container">
-          <form action="#">
-            <h1>Edit Player</h1>
-            <input
-              type="number"
-              id="teamid"
-              placeholder="TeamID"
-              name="teamID"
-            />
-            <select class="select">
-              <option value="Gk">GoalKeepers</option>
-              <option value="Cb">Defenders</option>
-              <option value="Mid">Midfielders</option>
-              <option value="St">Fowards</option>
-            </select>
-            <input
-              type="text"
-              id="playername"
-              placeholder="FirstName"
-              name="lirstName"
-            />
-            <input
-              type="text"
-              id="playername"
-              placeholder="LastName"
-              name="lastName"
-            />
-            <input type="number" id="date" placeholder="Age" name="age" />
-            <input
-              type="number"
-              id="number"
-              placeholder="ShirtNumber"
-              name="shirtNumber"
-            />
-            <button type="button" onclick="getinfo()">Save</button>
-          </form>
-        </div>
-      </div>
-    </form>
+    <div class="form-container sign-in-container">
+        <form action="#">
+          <h1>Edit Player</h1>
+          <input type="text" id="teamId" name="teamId" placeholder="Team ID"/>
+          <input type="text" id="text" name="firstName" placeholder="First Name" />
+          <input type="text" id="text" name="lirstName" placeholder="Larst Name" />
+          <input type="text" id="text" name="position" placeholder="Position" />
+          <input type="text" id="shirtnumber" name="shirtNumber" placeholder="Shirt Number" />
+          <div class="edit">
+                <button type="button" class="Save">Save</button>
+                <button type="button" class="update">Update</button>
+                <button type="button" class="delete">Delete</button>
+          </div>
+        </form>
   </body>
 </html>
