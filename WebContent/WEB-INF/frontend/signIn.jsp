@@ -11,6 +11,7 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 </head>
 <body>
+<%@ include file="clientHeader.jsp"%>
 	<div class="container" id="container">
 		<div class="form-container sign-up-container">
 			<form class="form-4" action="#">

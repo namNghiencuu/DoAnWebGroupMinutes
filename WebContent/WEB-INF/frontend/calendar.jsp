@@ -13,6 +13,7 @@
 </head>
 
 <body>
+<%@ include file="clientHeader.jsp"%>
   <div class="calendar">
     <div class="month">
       <strong>May</strong>

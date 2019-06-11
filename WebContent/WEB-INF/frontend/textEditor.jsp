@@ -11,6 +11,7 @@
       crossorigin="anonymous"
     />
   </head>
+  <%@ include file="adminheader.jsp"%>
   <body onload="enableEditMode();">
     <div>
       <button onclick="execCmd('bold');"><i class="fas fa-bold"></i></button>

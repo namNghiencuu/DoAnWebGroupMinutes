@@ -15,19 +15,7 @@
 
 
 <body>
-
-  <div id="navbar">
-    <div class="logo">
-      <a><img src="${pageContext.request.contextPath}/images/PageLogo/MinutesIcon.png" width="inherit;" /></a>
-    </div>
-    <div><a href="./homepage.html">News</a></div>
-    <div><a href="./transfer.html">Live Scores</a></div>
-    <div><a href="Leagues&Cups">Leagues & Cups</a></div>
-    <div><a href="./test1.html">Teams</a></div>
-    <div><img src="${pageContext.request.contextPath}/images/English icon.png" width="25px;" /> <a class="abc" href="english">English</a></div>
-  </div>
-
-
+<%@ include file="clientHeader.jsp"%>
   <div class="page-container">
     <div class="article-contain">
       <div class="contain">
@@ -44,12 +32,12 @@
             as a little underwhelming.
             <br><br>
 
-            “It’s just life,” Pep said on Friday. “It’s football. [What's] important is how you behave. Football, life,
+            Its just life�� Pep said on Friday. It's football. [What's] important is how you behave. Football, life,
             they aren't easy. You have to fight and compete.
             Now, it's [about] how we react.
             <br><br>
 
-            “We have to accept these sorts of situations, but looking behind won’t help us move forwards. These kinds of
+            And have to accept these sorts of situations, but looking behind won’t help us move forwards. These kinds of
             players have an opportunity to show they can do that.
             <br><br>
             “They will get back what they deserve. One day, maybe we will be in the same position, and maybe we will be
@@ -77,51 +65,8 @@
     </div>
   </div>
 
-  <div id="footer" class="footers" role="contentinfo">
-    <div class="inner">
-      <div class="logofooter">
-        <a href="./homepage.html" class="footerlogo" id="logofooters">
-          <img src="${pageContext.request.contextPath}/images/PageLogo/MinutesIcon.png" class="footerimage" />
-        </a>
-      </div>
-      <div id="footermenu" class="footermenu" role="navigation">
-        <h2 class="titleblock"></h2>
-        <ul class="menu">
-          <li class="menuitem"><a href="./contact-us.html" class="contact">CONTACT US</a></li>
-          <li class="menuitem"><a href="./terms.html" class="term">TERMS OF SERVICE</a></li>
-          <li class="menuitem"><a href="./policy.html" class="privacy">PRIVACY POLICY</a></li>
-          <li class="menuitem"><a href="./careers.html" class="career">CAREERS</a></li>
-        </ul>
-      </div>
-    </div>
-    <div id="social" class="socialmedia">
-      <ul class="footersocial">
-        <div><a href="https://www.facebook.com/nguyenhuycuong.nguyenhuycuong.33" class="icon-fb">
-            <i class="fab fa-facebook-f" aria-hidden="true"></i></a></div>
-        <div><a href="https://www.instagram.com/binhanred/"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-        </div>
-        <div><a href="https://twitter.com/CuongHuyNg"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-        </div>
-        <div><a href="https://www.youtube.com/channel/UC0HdtBwDacmZQxQtM5qGw8Q/videos?view=57&flow=grid"><i
-              class="fab fa-youtube" aria-hidden="true"></i></a></div>
-      </ul>
-    </div>
-    <div class="container">
-      <form action="">
-        <h1> Join Our Newsletter</h1>
-        <div class="email-box">
-          <i class="far fa-envelope"></i>
-          <input class="tbox" type="email" name="" value="" placeholder="Enter your Email">
-          <button class="btn1" type="button" name="button">Subscribe</button>
-        </div>
-      </form>
-    </div>
-    <div>
-      <a class="gotopbtn" href="#"><span class="backtop">Back to top</span><i class="fas fa-arrow-up">
-        </i>
-      </a>
-    </div>
-  </div>
+		<%@ include file="clientFooter.jsp"%>
+
   <script src="https://bit.ly/2MftPN4"></script>
   <script src="https://bit.ly/2G7kMsI"></script>
   <script src="https://bit.ly/2YIyKK0"></script>

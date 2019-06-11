@@ -17,7 +17,7 @@
 	<%@ include file="adminheader.jsp"%>
 	<div id="content">
 		<div>
-			<p id="pageName">Quản lý bài viết</p>
+			<p id="pageName">Manage Post</p>
 		</div>
 
 		<div id="layout">
@@ -48,11 +48,11 @@
 			<table id="table" class="display data">
 				<thead>
 					<tr>
-						<th>Ngày tạo</th>
-						<th>Tên bài viết</th>
-						<th>Bài viết gửi lên</th>
-						<th>Số người truy cập</th>
-						<th>Người tạo</th>
+						<th>Created date</th>
+						<th>Create post</th>
+						<th>Post</th>
+						<th>Number of accesses</th>
+						<th>Post creator</th>
 					</tr>
 				</thead>
 				<tbody>
