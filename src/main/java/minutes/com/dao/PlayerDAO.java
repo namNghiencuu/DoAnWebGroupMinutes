@@ -44,7 +44,7 @@ public class PlayerDAO {
 	}
 	
 	public List<Player> findByTeamIdAndPosition(int teamId, String position) {
-		String sql = String.format("SELECT * FROM player WHERE teamId = %d AND position = \" %s \" ", teamId, position);
+		String sql = String.format("SELECT * FROM player WHERE TeamId = %d AND position = \"%s\" ", teamId, position);
 		return jdbcTemplate.query(sql, new PlayerMapper());
 	}
 }

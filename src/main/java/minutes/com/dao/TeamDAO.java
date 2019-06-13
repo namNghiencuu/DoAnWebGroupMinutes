@@ -16,8 +16,8 @@ public class TeamDAO {
 	  @Autowired
 	  private JdbcTemplate jdbcTemplate;
 	  public void save(Team team) {
-	    String sql = "INSERT INTO team (name, leagues, players, tags) VALUES (?,?,?,?)";
-	    jdbcTemplate.update(sql,team.getName(), team.getLeague(), team.getPlayers(), team.getTags());
+	    String sql = "INSERT INTO team (name, nation, logo, Coach) VALUES (?,?,?,?)";
+	    jdbcTemplate.update(sql,team.getName(), team.getNation(), team.getLogo(), team.getCoach());
 	  }
 	  public void delete(int id) {
 	    String sql = "DELETE FROM team WHERE id = " + id;
@@ -25,8 +25,8 @@ public class TeamDAO {
 	  }
 	  
 	  public void update(Team team) {
-	    String sql = "UPDATE team SET name, leagues, players, tags WHERE id = ? ";
-	    jdbcTemplate.update(sql, team.getName(), team.getLeague(), team.getPlayers(), team.getTags(), team.getId());
+	    String sql = "UPDATE team SET name, nation, logo, Coach WHERE id = ? ";
+	    jdbcTemplate.update(sql, team.getName(), team.getNation(), team.getLogo(), team.getCoach(), team.getId());
 	  }
 	  public Team findById(int id) {
 	    String sql = "SELECT * FROM team WHERE id = ?";

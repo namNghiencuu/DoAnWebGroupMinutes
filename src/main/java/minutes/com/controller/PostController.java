@@ -16,12 +16,6 @@ public class PostController {
 	@Autowired
 	private PostService postService;
 
-	@RequestMapping(value = { "/post-list" }, method = RequestMethod.GET)
-	public String listPost(Model model) {
-		model.addAttribute("listPost", postService.findAll());
-		return "post-list";
-	}
-
 	@RequestMapping(value = "/post-save", method = RequestMethod.POST)
 	public String insertPost(Model model) {
 		model.addAttribute("post", new Post());

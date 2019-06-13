@@ -6,17 +6,19 @@ public class Player {
 	private int age;
 	private int shirtNumber;
 	private String position;
+	private String img;
 	private int teamId;
 	
 	public Player() {
 	}
 
-	public Player(String name, int age, int shirtNumber, String position, int teamId) {
+	public Player(String name, int age, int shirtNumber, String position, int teamId, String img) {
 		super();
 		this.name = name;
 		this.age = age;
 		this.shirtNumber = shirtNumber;
 		this.position = position;
+		this.img = img;
 		this.teamId = teamId;
 	}
 
@@ -68,6 +70,14 @@ public class Player {
 
 	public void setTeamId(int teamId) {
 		this.teamId = teamId;
+	}
+
+	public String getImg() {
+		return img;
+	}
+
+	public void setImg(String img) {
+		this.img = img;
 	}
 	
 }

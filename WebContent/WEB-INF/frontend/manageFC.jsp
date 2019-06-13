@@ -1,8 +1,10 @@
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
 <!DOCTYPE html>
 <html>
 
 <head>
-<title>Quản lý đội bóng</title>
+<title>Manage Team</title>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="stylesheet"
 	href="${pageContext.request.contextPath}/stylesheet/admindashboard/main.css" />
@@ -20,7 +22,7 @@
 	<%@ include file="adminheader.jsp"%>
 	<div id="content">
 		<div>
-			<p id="pageName">Quản lý đội bóng</p>
+			<p id="pageName">ManageTeam</p>
 		</div>
 		<div id="searchBox">
 			<div class="circle circle-s bg-green flex-container">
@@ -34,61 +36,17 @@
 
 	</div>
 	<div id="layout">
-		<div class="item">
-			<div class="FCLogo">
-				<img class="" src="${pageContext.request.contextPath}/images/FCLogo/Arsenal_Logo.png" />
-			</div>
-			<div class="FCName">Arsenal</div>
-		</div>
-		<div class="item">
-			<div class="FCLogo">
-				<img class="" src="${pageContext.request.contextPath}/images/FCLogo/Barcelona_Logo.png" />
-			</div>
-			<div class="FCName">Barcelona</div>
-		</div>
-		<div class="item">
-			<div class="FCLogo">
-				<img class="" src="${pageContext.request.contextPath}/images/FCLogo/Chelsea_Logo.png" />
-			</div>
-			<div class="FCName">Chelsea</div>
-		</div>
-		<div class="item">
-			<div class="FCLogo">
-				<img class="" src="${pageContext.request.contextPath}/images/FCLogo/Liverpool_Logo.png" />
-			</div>
-			<div class="FCName">Liverpool</div>
-		</div>
-		<div class="item">
-			<div class="FCLogo">
-				<img class="" src="${pageContext.request.contextPath}/images/FCLogo/MC_Logo.png" />
-			</div>
-			<div class="FCName">Manchester City</div>
-		</div>
-		<div class="item">
-			<div class="FCLogo">
-				<img class="" src="${pageContext.request.contextPath}/images/FCLogo/MU_Logo.jpg" />
-			</div>
-			<div class="FCName">Manchester United</div>
-		</div>
-		<div class="item">
-			<div class="FCLogo">
-				<img class="" src="${pageContext.request.contextPath}/images/FCLogo/Real madrid_Logo.png" />
-			</div>
-			<div class="FCName">Real Madrid</div>
-		</div>
-		<div class="item">
-			<div class="FCLogo">
-				<img class="" src="${pageContext.request.contextPath}/images/FCLogo/Vietnam_Logo.png" />
-			</div>
-			<div class="FCName">Viet Nam</div>
-		</div>
-		<div class="item">
-			<div class="FCLogo">
-				<img class="" src="${pageContext.request.contextPath}/images/FCLogo/Vietnam_Logo.png" />
-			</div>
-			<div class="FCName">Viet Nam</div>
-		</div>
-
+		<c:if test="${not empty teams}">
+			<c:forEach var="team" items="${teams}">
+				<div class="item" onclick="location.href='manageTeam/${team.id}';">
+					<div class="FCLogo">
+						<img class=""
+							src="${team.logo}" />
+					</div>
+					<div class="FCName">${team.name}</div>
+				</div>
+			</c:forEach>
+		</c:if>
 	</div>
 </body>
 

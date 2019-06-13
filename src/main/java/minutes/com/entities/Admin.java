@@ -1,22 +1,19 @@
 package minutes.com.entities;
 
-import java.util.ArrayList;
-
 public class Admin {
 	private int id;
 	private String userName;
 	private String password;
-	private ArrayList<String> todolist;
-	
+	private String email;
 	public Admin() {
 	}
 
 	
-	public Admin(String userName, String password, ArrayList<String> todolist) {
+	public Admin(String userName, String password, String email) {
 		super();
 		this.userName = userName;
 		this.password = password;
-		this.todolist = todolist;
+		this.email = email;
 	}
 
 
@@ -40,13 +37,20 @@ public class Admin {
 		this.password = password;
 	}
 
-	public ArrayList<String> getTodolist() {
-		return todolist;
+
+	public String getEmail() {
+		return email;
 	}
 
-	public void setTodolist(ArrayList<String> todolist) {
-		this.todolist = todolist;
+
+	public void setEmail(String email) {
+		this.email = email;
 	}
-	
-	
+
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+
 }

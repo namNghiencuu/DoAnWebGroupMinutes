@@ -13,18 +13,18 @@
 <body>
 	<div class="container" id="container">
 		<div class="form-container sign-up-container">
-			<form class="form-4" action="#">
+			<form class="form-4" action="${pageContext.request.contextPath}/createUserAccount" method="POST">
 				<h1>Create Account</h1>
 				<div class="social-container">
 					<a href="#" class="social"><i class="fab fa-facebook-f"></i></a> <a
 						href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
 				</div>
-				<span>or use your email for registration</span> <input type="text"
-					placeholder="Name" /> <input type="text" placeholder="Email" />
-				<input type="password" class="input-4" placeholder="Password" /> <input
+				<span>or create new account</span> <input type="text"
+					placeholder="Username" name="userName" /> <input type="text" placeholder="Email" name="email" />
+				<input type="password" class="input-4" placeholder="Password" name="password"/> <input
 					type="password" class="input-4" placeholder="Confirm Password" />
 				<span class="progress-bar_text">Password is blank</span>
-				<button>Sign Up</button>
+				<button type="submit">Sign Up</button>
 			</form>
 		</div>
 		<div class="form-container sign-in-container">

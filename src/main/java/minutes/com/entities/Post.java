@@ -1,7 +1,6 @@
 package minutes.com.entities;
 
-import java.sql.Date;
-import java.util.ArrayList;
+import java.time.LocalDateTime;
 
 public class Post {
 	private int id;
@@ -9,27 +8,24 @@ public class Post {
 	private String content;
 	private int author;
 	private String postType;
-	private Date postTime;
-	private Date updateTime;
-	private ArrayList<String> imageLink = new ArrayList<String>();
-	private ArrayList<String> socialLink = new ArrayList<String>();
-	private ArrayList<Integer> tags = new ArrayList<Integer>();
+	private LocalDateTime postTime;
+	private LocalDateTime updateTime;
+	private String imageLink;
+	private String videoLink;
 
 	public Post() {
 	};
 
-	public Post(int id, String title, String content, int author, String postType, Date PostTime, Date UpdateTime,
-			ArrayList<String> ImageLink, ArrayList<String> SocialLink, ArrayList<String> tags) {
+	public Post(String title, String content, int author, String postType, String imageLink, String videoLink) {
 		super();
-		this.id = id;
 		this.title = title;
 		this.content = content;
 		this.author = author;
 		this.postType = postType;
-		postTime = PostTime;
-		updateTime = UpdateTime;
-		imageLink = ImageLink;
-		socialLink = SocialLink;
+		this.postTime = LocalDateTime.now();
+		this.updateTime = LocalDateTime.now();
+		this.imageLink = imageLink;
+		this.videoLink = videoLink;
 	}
 
 	public int getId() {
@@ -72,42 +68,36 @@ public class Post {
 		this.postType = postType;
 	}
 
-	public Date getPostTime() {
+	public LocalDateTime getPostTime() {
 		return postTime;
 	}
 
-	public void setPostTime(Date PostTime) {
-		postTime = PostTime;
-	}
-
-	public Date getUpdateTime() {
-		return updateTime;
-	}
-
-	public void setUpdateTime(Date UpdateTime) {
-		updateTime = UpdateTime;
-	}
-
-	public ArrayList<String> getImageLink() {
-		return imageLink;
-	}
-
-	public void setImageLink(ArrayList<String> ImageLink) {
+	public void setImageLink(String ImageLink) {
 		imageLink = ImageLink;
 	}
 
-	public ArrayList<String> getSocialLink() {
-		return socialLink;
+	public LocalDateTime getUpdateTime() {
+		return updateTime;
 	}
 
-	public void setSocialLink(ArrayList<String> SocialLink) {
-		socialLink = SocialLink;
-	}
-	public ArrayList<Integer> getTags() {
-		return tags;
+	public void setUpdateTime() {
+		this.updateTime = LocalDateTime.now();
 	}
 
-	public void setTags(ArrayList<Integer> tags) {
-		this.tags = tags;
+	public String getVideoLink() {
+		return videoLink;
 	}
+
+	public void setVideoLink(String videoLink) {
+		this.videoLink = videoLink;
+	}
+
+	public String getImageLink() {
+		return imageLink;
+	}
+
+	public void setPostTime() {
+		this.postTime = LocalDateTime.now();;
+	}
+
 }

@@ -9,6 +9,8 @@
 	href="${pageContext.request.contextPath}/images/PageLogo/logo.png" />
 <link rel="stylesheet" type="text/css"
 	href="${pageContext.request.contextPath}/stylesheet/admindashboard/manageTeam.css" />
+<link rel="stylesheet" type="text/css"
+	href="${pageContext.request.contextPath}/stylesheet/admindashboard/navbar.css" />
 <link rel="stylesheet"
 	href="${pageContext.request.contextPath}/lib/fontawesome-free-5.8.1-web/css/all.css" />
 </head>
@@ -17,14 +19,16 @@
 
 	<!--Main-->
 	<div class=" columnHeader">
-		<h3 style="color: white">ManageTeam</h3>
+		<h3 style="color: white">Manage Team Info</h3>
 	</div>
 	<div id="generalInformation">
 		<div class="teamLogo">
 			<img src="${team.logo}" />
 		</div>
-		<p style="font-size: 20px">${team.name}</p>
-		<h4>Coach : ${team.coach}</h4>
+		<div class="teamInfoText">
+			<p style="font-size: 40px; color: red;">${team.name}</p>
+			<h4>Coach : ${team.coach}</h4>
+		</div>
 	</div>
 	<div class="roster" id="resultsss">
 		<div class="goalkeeper">
@@ -32,21 +36,20 @@
 				<h4 style="color: white;">GOALKEEPERS</h4>
 			</div>
 			<div class="column ">
-				<c:if test="${not empty goalKeeper}">
-					<c:forEach var="player" items="${goalKeeper}">
-						<div class="playerCard ">
+				<c:if test="${not empty goalkeeper}">
+					<c:forEach var="player" items="${goalkeeper}">
+						<div class="playerCard">
 							<div class="front">
-								<div class="playerLogo">
+								<div class="playerLogo imageHolder">
 									<img src="${player.img}" />
 								</div>
 								<h5 class="playerName">${player.name}</h5>
 								<h5 class="playerAge">${player.age}</h5>
 								<h5 class="playerShirtNumber">${player.shirtNumber}</h5>
-
 							</div>
 							<div class="back">
 								<div class="back-content middle">
-									<h2>Edit Player by :</h2>
+									<h2>${player.name}</h2>
 									<div class="sm">
 										<a href="#"><i class="fas fa-arrow-circle-right"></i></a> <a
 											href="#"><i class="fas fa-user-edit"></i></a> <a href="#"><i
@@ -75,7 +78,7 @@
 							</div>
 							<div class="back">
 								<div class="back-content middle">
-									<h2>Edit Player by :</h2>
+									<h2>${player.name}</h2>
 									<div class="sm">
 										<a href="#"><i class="fas fa-arrow-circle-right"></i></a> <a
 											href="#"><i class="fas fa-user-edit"></i></a> <a href="#"><i
@@ -104,7 +107,7 @@
 							</div>
 							<div class="back">
 								<div class="back-content middle">
-									<h2>Edit Player by :</h2>
+									<h2>${player.name}</h2>
 									<div class="sm">
 										<a href="#"><i class="fas fa-arrow-circle-right"></i></a> <a
 											href="#"><i class="fas fa-user-edit"></i></a> <a href="#"><i
@@ -133,7 +136,7 @@
 							</div>
 							<div class="back">
 								<div class="back-content middle">
-									<h2>Edit Player by :</h2>
+									<h2>${player.name}</h2>
 									<div class="sm">
 										<a href="#"><i class="fas fa-arrow-circle-right"></i></a> <a
 											href="#"><i class="fas fa-user-edit"></i></a> <a href="#"><i

@@ -173,18 +173,17 @@
 					<h2 class="media-headlines" itemprop="name">
 						<span>VIDEO MEDIA</span>
 					</h2>
-					<meta itemprop="itemListOrder"
-						content="https://schema.org/ItemListOrderDescending">
-					<div class="video clearfix" data-group-type="video">
-						<article class="videoucl">
-							<div class="videoucl1">
-								<iframe width="250" height="200"
-									src="https://www.youtube.com/embed/oC18FwzHDYY"
-									allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-									allowfullscreen> </iframe>
+					<c:if test="${not empty videoPost}">
+						<c:forEach var="post" items="${videoPost}">
+							<div class="video clearfix" data-group-type="video">
+								<article class="videoucl">
+									<div class="videoucl1">
+										${post.videoLink}
+									</div>
+								</article>
 							</div>
-						</article>
-					</div>
+						</c:forEach>
+					</c:if>
 					<div class="center bottom">
 						<a
 							href="https://www.goal.com/en-in/category/videos/1/1qaufvsub9ydo10adn9s13s8vi"

@@ -6,23 +6,26 @@ import java.sql.SQLException;
 
 import org.springframework.jdbc.core.RowMapper;
 
-import minutes.com.entities.Post;
-import minutes.com.services.ArrayToArrayList;
+import minutes.com.entities.Match;
 
-public class MatchMapper implements RowMapper<Post> {
+public class MatchMapper implements RowMapper<Match> {
 	
-	public Post mapRow(ResultSet rs, int rowNum) throws SQLException {
-		ArrayToArrayList atal = new ArrayToArrayList();
-	    Post post = new Post();
-	    post.setTitle(rs.getString("title"));
-	    post.setContent(rs.getString("content"));
-	    post.setAuthor(rs.getInt("author"));
-	    post.setPostType(rs.getString("postType"));
-	    post.setPostTime(rs.getDate("postTime"));
-	    post.setUpdateTime(rs.getDate("updateTime"));
-	    post.setTags(atal.arrayToIntArrayList(rs.getArray("tags")));
-	    post.setImageLink(atal.arrayToStringArrayList(rs.getArray("imageLink")));
-	    post.setSocialLink(atal.arrayToStringArrayList(rs.getArray("socialLink")));
-	    return post;
+	public Match mapRow(ResultSet rs, int rowNum) throws SQLException {
+	    Match match = new Match();
+	    match.setId(rs.getInt("id"));
+	    match.setTeamName1(rs.getString("teamName1"));
+	    match.setTeamName2(rs.getString("teamName2"));
+	    match.setScore1(rs.getInt("score1"));
+	    match.setScore2(rs.getInt("score2"));
+
+	    match.setId(rs.getInt("id"));
+	    match.setId(rs.getInt("id"));
+	    match.setId(rs.getInt("id"));
+	    match.setId(rs.getInt("id"));
+	    match.setId(rs.getInt("id"));
+	    match.setId(rs.getInt("id"));
+	    match.setId(rs.getInt("id"));
+	    match.setId(rs.getInt("id"));
+	    return match;
 	  }
 }

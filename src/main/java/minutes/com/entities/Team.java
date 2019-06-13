@@ -1,26 +1,26 @@
 package minutes.com.entities;
 
-import java.util.ArrayList;
-
 public class Team {
 	private int id;
 	private String name;
-	private ArrayList<Integer> league = new ArrayList<Integer>();
-	private ArrayList<Integer> players = new ArrayList<Integer>();
-	private ArrayList<String> tags = new ArrayList<String>();
+	private String nation;
+	private String logo;
+	private String coach;
 
 	public Team() {
 	}
-
-	public Team(String name, ArrayList<Integer> league, ArrayList<Integer> players, ArrayList<String> tags) {
+	
+	public Team(String name, String nation, String logo, String coach) {
 		super();
 		this.name = name;
-		this.league = league;
-		this.players = players;
-		this.tags = tags;
+		this.nation = nation;
+		this.logo = logo;
+		this.coach = coach;
 	}
 
-
+	public void setId(int id) {
+		this.id = id;
+	}
 
 	public int getId() {
 		return id;
@@ -34,29 +34,31 @@ public class Team {
 		this.name = name;
 	}
 
-	public ArrayList<Integer> getLeague() {
-		return league;
+
+	public String getNation() {
+		return nation;
 	}
 
-	public void setLeague(ArrayList<Integer> league) {
-		this.league = league;
+
+	public void setNation(String nation) {
+		this.nation = nation;
 	}
 
-	public ArrayList<Integer> getPlayers() {
-		return players;
+
+	public String getCoach() {
+		return coach;
 	}
 
-	public void setPlayers(ArrayList<Integer> players) {
-		this.players = players;
+
+	public void setCoach(String coach) {
+		this.coach = coach;
 	}
 
-	public ArrayList<String> getTags() {
-		return tags;
+	public String getLogo() {
+		return logo;
 	}
 
-	public void setTags(ArrayList<String> tags) {
-		this.tags = tags;
-	};
-
-	
+	public void setLogo(String logo) {
+		this.logo = logo;
+	}
 }

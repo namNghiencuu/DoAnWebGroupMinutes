@@ -7,6 +7,9 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.sql.ResultSet;
+
+
 import minutes.com.entities.Admin;
 import minutes.com.mappers.AdminMapper;
 
@@ -16,16 +19,15 @@ public class AdminDAO {
 	  @Autowired
 	  private JdbcTemplate jdbcTemplate;
 	  public void save(Admin admin) {
-	    String sql = "INSERT INTO admin (userName, password) VALUES (?,?)";
-	    jdbcTemplate.update(sql,admin.getUserName(), admin.getPassword());
+	    String sql = "INSERT INTO users (username, password, email) VALUES (?,?, ?)";
+	    jdbcTemplate.update(sql,admin.getUserName(), admin.getPassword(), admin.getEmail());
 	  }
 	  public void delete(int id) {
-	    String sql = "DELETE FROM admin WHERE id = " + id;
+	    String sql = "DELETE FROM users WHERE id = " + id;
 	    jdbcTemplate.update(sql);
 	  }
-	  
 	  public void update(Admin admin) {
-	    String sql = "UPDATE admin SET userName, password WHERE id = ? ";
+	    String sql = "UPDATE users SET userName = ?, password = ? WHERE id = ? ";
 	    jdbcTemplate.update(sql, admin.getUserName(), admin.getPassword(), admin.getId());
 	  }
 	  public Admin findById(int id) {

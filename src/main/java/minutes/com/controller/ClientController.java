@@ -1,7 +1,5 @@
 package minutes.com.controller;
 
-import java.util.ArrayList;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -15,14 +13,16 @@ import minutes.com.services.PostService;
 @Controller
 public class ClientController {
 	@Autowired
-	private PostService postService;
+	private PostService PostService;
 	
-	@RequestMapping(value = {"/"}, method = RequestMethod.POST)
-	public String home(final Model model) {
-		model.addAttribute("listPost", postService.findTop(3));
-		model.addAttribute("videoPost", postService.findVideo(10);
-		model.addAttribute("listPost", postService.findTop(3));
-
+//	@Autowired
+//	private MatchService MatchService;
+	
+	@RequestMapping(value = {"/"}, method = RequestMethod.GET)
+	public String home(Model model) {
+		model.addAttribute("listPost", PostService.findTopPost(10));
+		model.addAttribute("videoPost", PostService.findTopVideoPost(3));
+//		model.addAttribute("listMatch", MatchService.findTopMatch(3));
 		return "homepage";
 	}
 

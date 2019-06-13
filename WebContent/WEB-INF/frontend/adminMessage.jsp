@@ -28,7 +28,6 @@
 				placeholder="FC Name..."> </input>
 		</div>
 	</div>
-	
 </body>
 
 </html>
