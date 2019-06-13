@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Football News, Live Scores, Results & Transfer | Minutes.com</title>
+    <title>Real Estate Platform</title>
     <link rel="shortcut icon" href="../public/images/PageLogo/logo.png" />
     <link
+      href="../../public/stylesheet/buy.css"
       rel="stylesheet"
       type="text/css"
-      href="../public/stylesheet/AddPlayer.css"
     />
     <link
       rel="stylesheet"
@@ -18,8 +18,7 @@
   <body>
     <div class="form-container sign-in-container">
       <form action="#">
-        <h1>Edit Player</h1>
-        <input type="text" id="teamId" name="teamId" placeholder="Team ID" />
+        <h1>Booking Property</h1>
         <input
           type="text"
           id="text"
@@ -32,17 +31,26 @@
           name="lirstName"
           placeholder="Larst Name"
         />
-        <input type="text" id="text" name="position" placeholder="Position" />
+        <input type="email" id="email" name="email" placeholder="Email" />
         <input
-          type="text"
-          id="shirtnumber"
-          name="shirtNumber"
-          placeholder="Shirt Number"
+          type="tel"
+          id="telephone"
+          name="telephone"
+          placeholder="Phone Number"
         />
+        <div class="idcard">
+          <p class="cmnd">Identification Card :</p>
+          <input
+            type="file"
+            id="file"
+            name="file"
+            class="file"
+            value="fileUpload"
+          />
+        </div>
         <div class="edit">
-          <button type="button" class="Save">Save</button>
-          <button type="button" class="update">Update</button>
-          <button type="button" class="delete">Delete</button>
+          <button type="button" class="Save">Book</button>
+          <button type="button" class="update">Cancel</button>
         </div>
       </form>
     </div>

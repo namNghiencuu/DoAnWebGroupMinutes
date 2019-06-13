@@ -1,0 +1,139 @@
+body {
+  background: #f6f5f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Open Sans Condensed", sans-serif;
+  height: 100vh;
+  margin: -20px 0 50px;
+}
+.form-container {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  font-family: "Open Sans Condensed", sans-serif;
+  transition: all 0.6s ease-in-out;
+}
+.sign-in-container {
+  left: 0;
+  width: 50%;
+  z-index: 2;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+.container {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  position: relative;
+  font-family: "Open Sans Condensed", sans-serif;
+  overflow: hidden;
+  width: 800px;
+  max-width: 100%;
+  min-height: 480px;
+}
+input {
+  background-color: #eee;
+  border: none;
+  padding: 12px 15px;
+  font-family: "Open Sans Condensed", sans-serif;
+  margin: 8px 0;
+  width: 100%;
+}
+.select {
+  background-color: #eee;
+  border: none;
+  padding: 12px 15px;
+  margin: 8px 0;
+  width: 107%;
+}
+input .a {
+  background-color: #eee;
+  border: none;
+  padding: 12px 15px;
+  font-family: "Open Sans Condensed", sans-serif;
+  margin: 8px 0;
+  width: 60%;
+}
+form {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Open Sans Condensed", sans-serif;
+  flex-direction: column;
+  padding: 0 50px;
+  height: 100%;
+  text-align: center;
+}
+button:active {
+  transform: scale(0.95);
+}
+
+button:focus {
+  outline: none;
+}
+.edit {
+  margin-right: 15px;
+}
+button.ghost {
+  background-color: transparent;
+  border-color: #ffffff;
+}
+button {
+  border-radius: 20px;
+  border: 1px solid #081f2c;
+  background-color: #081f2c;
+  font-family: "Open Sans Condensed", sans-serif;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  margin-right: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+}
+h1 {
+  font-weight: bold;
+  margin: 0;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+h2 {
+  text-align: center;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 100;
+  line-height: 20px;
+  font-family: "Open Sans Condensed", sans-serif;
+  letter-spacing: 0.5px;
+}
+
+span {
+  font-size: 12px;
+}
+
+a {
+  color: #333;
+  font-size: 14px;
+  text-decoration: none;
+  margin: 15px 0;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+.idcard {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-column-gap: 26px;
+}
+.cmnd {
+  grid-column: 1;
+}
+.file {
+  grid-column: 2;
+}
