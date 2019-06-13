@@ -15,6 +15,7 @@
 </head>
 
 <body>
+<%@ include file="clientHeader.jsp"%>
     <section class="body1">
         <!---header-->
         <div id="navbar">
