@@ -13,7 +13,7 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="../../public/stylesheet/checkaccount.css"
+      href="../../public/stylesheet/interbank.css"
     />
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap"
@@ -26,7 +26,7 @@
   </head>
   <body>
     <section class="body1">
-      <!--Header-->
+      <!--HEADER-->
       <div id="navbar">
         <div class="logo">
           <a href="./realestate.html"
@@ -42,48 +42,46 @@
         <div><a href="../../html/signin.html" class="abc">Sign in</a></div>
         <div><a href="" class="abc">Help</a></div>
       </div>
-      <!--MainPage-->
+      <!--MAINPAGE-->
       <div class="main">
-        <p class="chonbank">Chọn ngân hàng của bạn</p>
-        <div class="bank">
-          <div class="listbank1">
-            <a href="../TeacherPhung/interbank.html">
-              <img
-                src="../../public/images/WebcoPhung/banking/viettinbank.png"
-                class="viettinbank"
+        <p class="titlethanhtoan">Thực hiện thanh toán</p>
+        <div class="innermain">
+          <div class="inputinfo">
+            <form>
+              <input
+                type="text"
+                class="cardNumber aa"
+                placeholder="Card Number"
               />
-            </a>
-            <a href=""
-              ><img
-                src="../../public/images/WebcoPhung/banking/sacom.jpg"
-                class="sacom"
+              <br />
+              <input
+                type="text"
+                class="cardOwner aa"
+                placeholder="Card Owner"
               />
-            </a>
-            <a href="">
-              <img
-                src="../../public/images/WebcoPhung/banking/acb.jpg"
-                class="acb"
+              <br />
+              <input
+                type="datetime"
+                class="launchedday aa"
+                placeholder="Release Day"
               />
-            </a>
-            <a href="">
-              <img
-                src="../../public/images/WebcoPhung/banking/bidv.jpg"
-                class="bidv"
-              />
-            </a>
-            <a href="">
-              <img
-                src="../../public/images/WebcoPhung/banking/agri.jpg"
-                class="argi"
-              />
-            </a>
+              <br />
+              <br />
+              <button type="button" class="thanhtoan">Pay</button>
+              <a href="../TeacherPhung/checkaccount.html">
+                <button type="button" class="thanhtoan">Back</button></a
+              >
+            </form>
+          </div>
+          <div class="banklogo">
+            <img
+              src="../../public/images/WebcoPhung/banking/viettinbank.png"
+              class="viettinbank"
+            />
           </div>
         </div>
-        <a href="../TeacherPhung/checkpackages.html">
-          <button type="button" class="back">Back</button>
-        </a>
       </div>
-      <!--Footer-->
+      <!--FOOTER-->
       <div id="footer" class="footers" role="contentinfo">
         <div class="inner">
           <div class="logofooter">
